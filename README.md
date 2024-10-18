@@ -1,6 +1,12 @@
 # SQL and PostgreSQL learning
 A blog documenting me learning of SQL and PostgreSQL
 
+## 18 Oct, 2024 (day 5)
+
+I finished the preface, and, in a way, chapter 1.
+
+Apart from PostgreSQL, I plan to finally visualize me database model. I am not sure yet what would be the best way to do it.
+
 ## 14 to 17 Oct, 2024 (days 1 to 4)
 
 Lacking a job too long, I decided to go back to computer science. I am to refresh me SQL basics and learn the basics of PostgreSQL. I have allotted 30 days for this. That means that the last day shall be 13 Nov, 2024. Then, on 14 Nov, 2024, here on the blog I will summarize what I have learnt.
