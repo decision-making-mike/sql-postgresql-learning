@@ -8,7 +8,7 @@ I have refined and published the database model. The database is to be used by a
 
  I wanted the names of the tables and columns to be as straightforward as possible. 
 
-It is not complete yet. The thing is, in this learning project, I have decided to make multiple small refinements of resources instead of publishing them when I consider them complete. In case of this model, I should definitely add more tables. It lacks information about employees, for example. However, overall I do not plan adding too many details. I want it to be an example model. It should be complex enough to allow me to use me current skills, learn new ones, and show them. In the same time it should be simple enough so that I will not get lost in the details.
+It is not complete yet. The thing is, in this learning project, I have decided to publish resources early, and make multiple small refinements of them later, instead of publishing them only when I consider them complete. In case of this model, I should definitely add more tables. It lacks information about employees, for example. However, overall I do not plan adding too many details. I want it to be an example model. It should be complex enough to allow me to use me current skills, learn new ones, and show them. In the same time it should be simple enough so that I will not get lost in the details.
 
 ### TODOs
 
