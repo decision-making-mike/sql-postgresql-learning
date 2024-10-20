@@ -6,11 +6,24 @@ A model for a database of an example transport company.
 
 No column in no table shall be null.
 
-### Orders
+|No.|Name
+|-|-
+|1|Orders
+|2|People
+|3|People companies
+|4|Vehicles
+|5|Addresses
+|6|Parcels
+|7|Parcel shipments
+|8|Parcel deliveries
+|9|Required payments
+|10|Done payments
+
+## Columns
+
+### "Orders" table
 
 A row is expected to be added when a client has placed an order.
-
-#### Columns
 
 |No.|Name|Can be null?
 |-|-|-
@@ -22,18 +35,14 @@ A row is expected to be added when a client has placed an order.
 |6|Place of origin address ID|No
 |7|Place of destination address ID|No
 
-### People
-
-#### Columns
+### "People" table
 
 |No.|Name|Can be null?
 |-|-|-
 |1|ID|No
 |2|Name|No
 
-### People companies
-
-#### Columns
+### "People companies" table
 
 |No.|Name|Can be null?
 |-|-|-
@@ -41,9 +50,7 @@ A row is expected to be added when a client has placed an order.
 |2|Registration number|No
 |3|Person ID|No
 
-### Vehicles
-
-#### Columns
+### "Vehicles" table
 
 |No.|Name|Can be null?
 |-|-|-
@@ -51,9 +58,7 @@ A row is expected to be added when a client has placed an order.
 |2|Maximum cargo weight in kg|No
 |3|GPS location|No
 
-### Addresses
-
-#### Columns
+### "Addresses" table
 
 |No.|Name|Can be null?
 |-|-|-
@@ -61,9 +66,7 @@ A row is expected to be added when a client has placed an order.
 |2|Address|No
 |3|GPS location|No
 
-### Parcels
-
-#### Columns
+### "Parcels" table
 
 |No.|Name|Can be null?
 |-|-|-
@@ -71,9 +74,7 @@ A row is expected to be added when a client has placed an order.
 |2|Order ID|No
 |3|Estimated weight in kg|No
 
-### Parcel shipments
-
-#### Columns
+### "Parcel shipments" table
 
 |No.|Name|Can be null?
 |-|-|-
@@ -82,9 +83,7 @@ A row is expected to be added when a client has placed an order.
 |3|Parcel ID|No
 |4|Shipment date and time|No
 
-### Parcel deliveries
-
-#### Columns
+### "Parcel deliveries" table
 
 |No.|Name|Can be null?
 |-|-|-
@@ -93,9 +92,7 @@ A row is expected to be added when a client has placed an order.
 |3|Address ID|No
 |4|Delivery date and time|No
 
-### Required payments
-
-#### Columns
+### "Required payments" table
 
 |No.|Name|Can be null?
 |-|-|-
@@ -104,9 +101,7 @@ A row is expected to be added when a client has placed an order.
 |3|Amount|No
 |4|Due date|No
 
-### Done payments
-
-#### Columns
+### "Done payments" table
 
 |No.|Name|Can be null?
 |-|-|-
