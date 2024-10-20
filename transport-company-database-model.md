@@ -16,8 +16,8 @@ A row is expected to be added when a client has placed an order.
 |-|-|-
 |1|ID|No
 |2|Order acceptance date and time|No
-|3|Consignor ID|No
-|4|Consignee ID|No
+|3|Cargo handing over person ID|No
+|4|Cargo receiving person ID|No
 |5|Place of origin address ID|No
 |6|Place of destination address ID|No
 
