@@ -16,10 +16,11 @@ A row is expected to be added when a client has placed an order.
 |-|-|-
 |1|ID|No
 |2|Order acceptance date and time|No
-|3|Cargo handing over person ID|No
-|4|Cargo receiving person ID|No
-|5|Place of origin address ID|No
-|6|Place of destination address ID|No
+|3|Order placing person ID|No
+|4|Cargo handing over person ID|No
+|5|Cargo receiving person ID|No
+|6|Place of origin address ID|No
+|7|Place of destination address ID|No
 
 ### People
 
