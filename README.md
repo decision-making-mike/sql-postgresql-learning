@@ -2,6 +2,18 @@
 
 A blog documenting me learning of SQL and PostgreSQL
 
+## 20 Oct, 2024 (day 7)
+
+I have figured out how to push the Git changes to GitHub through the command line. Now I can do things unavailable through the GitHub website, like amending a commit.
+
+I have updated the model a bit. I have removed the terms "consignor" and "consignee" from the "Orders" table. First, as far as I know, they were not relevant to this model. Second, I could not figure out what I had really meant by them. Instead, I am now making use in that table of the terms "Cargo handing over person" and "Cargo receiving person". I have also added the information what person has placed the order. I have reorganized the file with the model for readability.
+
+### TODOs
+
+1. Database model tables columns descriptions adding
+2. New database model tables adding consideration
+3. Order placing person, cargo handing over person and cargo receiving person companies information adding
+
 ## 19 Oct, 2024 (day 6)
 
 I have refined and published the database model. The database is to be used by an example transport company. You can view the model at https://github.com/decision-making-mike/sql-postgresql-learning/blob/main/transport-company-database-model.md.
