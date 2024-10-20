@@ -6,7 +6,7 @@ A model for a database of an example transport company.
 
 No column in no table shall be null.
 
-### 1. Orders
+### Orders
 
 A row is expected to be added when a client has placed an order.
 
@@ -21,7 +21,7 @@ A row is expected to be added when a client has placed an order.
 |5|Place of origin address ID|No
 |6|Place of destination address ID|No
 
-### 2. People
+### People
 
 #### Columns
 
@@ -30,7 +30,7 @@ A row is expected to be added when a client has placed an order.
 |1|ID|No
 |2|Name|No
 
-### 3. People companies
+### People companies
 
 #### Columns
 
@@ -40,7 +40,7 @@ A row is expected to be added when a client has placed an order.
 |2|Registration number|No
 |3|Person ID|No
 
-### 4. Vehicles
+### Vehicles
 
 #### Columns
 
@@ -50,7 +50,7 @@ A row is expected to be added when a client has placed an order.
 |2|Maximum cargo weight in kg|No
 |3|GPS location|No
 
-### 5. Addresses
+### Addresses
 
 #### Columns
 
@@ -60,7 +60,7 @@ A row is expected to be added when a client has placed an order.
 |2|Address|No
 |3|GPS location|No
 
-### 6. Parcels
+### Parcels
 
 #### Columns
 
@@ -70,7 +70,7 @@ A row is expected to be added when a client has placed an order.
 |2|Order ID|No
 |3|Estimated weight in kg|No
 
-### 7. Parcel shipments
+### Parcel shipments
 
 #### Columns
 
@@ -81,7 +81,7 @@ A row is expected to be added when a client has placed an order.
 |3|Parcel ID|No
 |4|Shipment date and time|No
 
-### 8. Parcel deliveries
+### Parcel deliveries
 
 #### Columns
 
@@ -92,7 +92,7 @@ A row is expected to be added when a client has placed an order.
 |3|Address ID|No
 |4|Delivery date and time|No
 
-### 9. Required payments
+### Required payments
 
 #### Columns
 
@@ -103,7 +103,7 @@ A row is expected to be added when a client has placed an order.
 |3|Amount|No
 |4|Due date|No
 
-### 10. Done payments
+### Done payments
 
 #### Columns
 
