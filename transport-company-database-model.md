@@ -81,7 +81,7 @@ A row is expected to be added when a client has placed an order.
 |1|ID|No|Yes
 |2|Vehicle ID|No|No
 |3|Parcel ID|No|No
-|4|Address ID|no|No
+|4|Address ID|No|No
 |5|Shipment date and time|No|No
 
 ### "Parcel deliveries" table
