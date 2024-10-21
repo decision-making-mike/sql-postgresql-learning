@@ -2,6 +2,21 @@
 
 A blog documenting me learning of SQL and PostgreSQL
 
+## 21 Oct, 2024 (day 8)
+
+I have added the address that a shipment is done at.
+
+I have added descriptions of tables.
+
+I have removed the TODO of "order placing person, cargo handing over person and cargo receiving person companies information adding." It makes no sense as there is already information about companies of any people mentioned in the model.
+
+I should note I base the model not on any strict rules. At least for now, while I am learning. For example, I mean the notions of nullability and uniqueness, employed as attributes of columns, not to adhere stricly to any standard definition. By "can be null" I wish to mean "can the value be not present." And, for another example, I mean the model not to represent a strict SQL point of view, the less a strict PostgreSQL one.
+
+### TODOs
+
+1. New database model tables adding consideration
+2. PostgreSQL tutorial continuation
+
 ## 20 Oct, 2024 (day 7)
 
 I have figured out how to push the Git changes to GitHub through the command line. Now I can do things unavailable through the GitHub website, like amending a commit.
