@@ -10,7 +10,7 @@ I have added descriptions of tables.
 
 I have removed the TODO of "order placing person, cargo handing over person and cargo receiving person companies information adding." It makes no sense as there is already information about companies of any people mentioned in the model.
 
-I should note I base the model not on any strict rules. At least for now, while I am learning. For example, I mean the notions of nullability and uniqueness, employed as attributes of columns, not to adhere stricly to any standard definition. By "can be null" I wish to mean "can the value be not present." And, for another example, I mean the model not to represent a strict SQL point of view, the less a strict PostgreSQL one.
+I should note I base the model not on any strict rules. I mean it not to represent a strict SQL point of view, the less a strict PostgreSQL one. At least for now, while I am learning. For example, I mean the notion of nullability, employed as an attribute of columns, not to adhere stricly to any standard definition. By "can be null" I just wish to mean "can the value be not present."
 
 ### TODOs
 
