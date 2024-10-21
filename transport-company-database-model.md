@@ -8,16 +8,16 @@ No column in no table shall be null.
 
 |No.|Name|Description
 |-|-|-
-|1|Orders|Orders. The order placing person, the cargo handing over person and the cargo receiving person can be the same person. One order can be assigned to only one order placing person, only one cargo handing over person, only one cargo receiving person, only one place of origin address and only one place of destination address. One order placing person can be assigned to multiple orders. One cargo handing over person can be assigned to multiple orders. One cargo receiving person can be assigned to multiple orders. One place of origin address can be assigned to multiple orders. One place of destination address can be assigned to multiple orders.
-|2|People|People mentioned in any other table within this model.
-|3|People companies|Companies of the people from the "People" table. One person can be assigned to only one company. One company can be assigned to multiple people.
-|4|Vehicles|Vehicles that the company possesses.
-|5|Addresses|Addresses mentioned in any other table within this model.
-|6|Parcels|Individual parcels that the company ships within each order. One parcel can be assigned to only one order. One order can be assigned to multiple parcels.
-|7|Parcel shipments|Shipments of parcels. A parcel can be shipped multiple times if the company wants to use one or more distribution centers as intermediaries. One shipment can be assigned to only one vehicle, only one address and multiple parcels. One vehicle can be assigned to multiple shipments. One address can be assigned to multiple shipments. One parcel can be assigned to multiple shipments.
-|8|Parcel deliveries|Deliveries of parcels. A parcel can be delivered multiple times if the company wants to use one or more distribution centers as intermediaries. One delivery can be assigned to only one shipment and only one address. One address can be assigned to multiple deliveries. One shipment can be assigned to only one delivery.
-|9|Required payments|Payments for deliveries that the clients of the company are charged. A client is supposed to be charged a payment for their order after all the parcels within this order have been delivered. One required payment can be assigned to only one order. One order can be assigned to only one required payment.
-|10|Done payments|Payments for orders that the clients of the company have paid. One done payment can be assigned to only one required payment. One required payment can be assigned to only one done payment.
+|1|Orders|Orders. A row represents an order. The order placing person, the cargo handing over person and the cargo receiving person can be the same person. One order can be assigned to only one order placing person, only one cargo handing over person, only one cargo receiving person, only one place of origin address and only one place of destination address. One order placing person can be assigned to multiple orders. One cargo handing over person can be assigned to multiple orders. One cargo receiving person can be assigned to multiple orders. One place of origin address can be assigned to multiple orders. One place of destination address can be assigned to multiple orders.
+|2|People|People mentioned in any other table within this model. A row represents a person.
+|3|People companies|Companies of the people from the "People" table. A row represents a company. One person can be assigned to only one company. One company can be assigned to multiple people.
+|4|Vehicles|Vehicles that the company possesses. A row represents a vehicle.
+|5|Addresses|Addresses mentioned in any other table within this model. A row represents an address.
+|6|Parcels|Individual parcels that the company ships within each order. A row represents a parcel. One parcel can be assigned to only one order. One order can be assigned to multiple parcels.
+|7|Parcel shipments|Shipments of parcels. A row represents a shipment. A parcel can be shipped multiple times if the company wants to use one or more distribution centers as intermediaries. One shipment can be assigned to only one vehicle, only one address and multiple parcels. One vehicle can be assigned to multiple shipments. One address can be assigned to multiple shipments. One parcel can be assigned to multiple shipments.
+|8|Parcel deliveries|Deliveries of parcels. A parcel can be delivered multiple times if the company wants to use one or more distribution centers as intermediaries. A row represents a delivery. One delivery can be assigned to only one shipment and only one address. One address can be assigned to multiple deliveries. One shipment can be assigned to only one delivery.
+|9|Required payments|Payments for deliveries that the clients of the company are charged. A client is supposed to be charged a payment for their order after all the parcels within this order have been delivered. A row represents a required payment. One required payment can be assigned to only one order. One order can be assigned to only one required payment.
+|10|Done payments|Payments for orders that the clients of the company have paid. A row represents a done payment. One done payment can be assigned to only one required payment. One required payment can be assigned to only one done payment.
 
 ## Columns
 
