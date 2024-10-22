@@ -2,6 +2,25 @@
 
 A blog documenting me learning of SQL and PostgreSQL
 
+## 22 Oct, 2024 (day 9)
+
+I have red chapters 2 and 3 of the PostgreSQL documentation, partly already yesterday, after publishing the day 8 update. I have thus completed the tutorial and part I. What I specifically yet understand not are window functions.
+
+I now plan to read part II and III. Of course, I expect not to complete them before the 30 days pass. They are too big. We will see how far I will go.
+
+I believe reading other parts, that is IV to VII, should not be of me interest during me forseeable learning of PostgreSQL.
+
+Beyond reading, I believe to have successfully created a database, then `pg_dumpall`ed, then `drop`ed this database, and finally restored it with `psql -f`.
+
+I have created a table with `create table` and displayed it with `\dt`. I have inserted a row thereinto with `insert into` and displayed it with `select`.
+
+I discovered https://wiki.postgresql.org/wiki/Don%27t_Do_This
+
+### TODOs
+
+1. New database model tables adding consideration
+2. PostgreSQL documentation continuation
+
 ## 21 Oct, 2024 (day 8)
 
 I have added the address that a shipment is done at.
