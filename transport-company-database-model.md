@@ -42,13 +42,20 @@ A row is expected to be added when a client has placed an order.
 |1|ID|No
 |2|Name|No
 
-### "People companies" table
+### "Companies" table
 
 |No.|Name|Can be null?
 |-|-|-
 |1|ID|No
 |2|Registration number|No
-|3|Person ID|No
+
+### "People and companies" table
+
+|No.|Name|Can be null?
+|-|-|-
+|1|ID|No
+|2|Person ID|No
+|3|Company ID|No
 
 ### "Vehicles" table
 
