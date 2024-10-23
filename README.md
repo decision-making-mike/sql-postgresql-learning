@@ -2,6 +2,23 @@
 
 A blog documenting me learning of SQL and PostgreSQL
 
+## 23 Oct, 2024 (day 10)
+
+I red here and there about window functions. They seem not so difficult in terms of usage in databases. It is their use cases, the business logic, that seem more difficult.
+
+I have created separate tables for companies and the relations between companies and people. The objective was to avoid duplication of the registration number of a company when it has more than one person assigned.
+
+I have created the people, companies and vehicles tables. But I will not present the DDL yet because I have not checked whether the tables are created properly. Even considering I saw not any errors.
+
+As soon as all the DDL is prepared and published, I plan to archive the model. By that I mean to move the file with it to an "archive" directory within the repository and do not change it anymore. I should concentrate solely on the database. I believe in such a small, learning project like this it is reasonable to stick to one source of truth. It is better not to have to update multiple places with a single change, like both the model and the database. Saves me time and mistakes.
+
+### TODOs
+
+1. New database model tables adding consideration
+2. PostgreSQL documentation continuation
+3. Proper text file table creation validation way finding
+4. Model implementation continuation
+
 ## 22 Oct, 2024 (day 9)
 
 I have red chapters 2 and 3 of the PostgreSQL documentation, partly already yesterday, after publishing the day 8 update. I have thus completed the tutorial and part I. What I specifically yet understand not are window functions.
