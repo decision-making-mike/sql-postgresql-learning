@@ -29,7 +29,7 @@ A row is expected to be added when a client has placed an order.
 |No.|Name|Can be null?
 |-|-|-
 |1|ID|No
-|2|Order acceptance date and time|No
+|2|Acceptance date and time|No
 |3|Order placing person ID|No
 |4|Cargo handing over person ID|No
 |5|Cargo receiving person ID|No
