@@ -82,7 +82,7 @@ A row is expected to be added when a client has placed an order.
 |2|Order ID|No
 |3|Estimated weight in kg|No
 
-### "Parcel shipments" table
+### "Shipments" table
 
 |No.|Name|Can be null?
 |-|-|-
@@ -90,16 +90,16 @@ A row is expected to be added when a client has placed an order.
 |2|Vehicle ID|No
 |3|Parcel ID|No
 |4|Address ID|No
-|5|Shipment date and time|No
+|5|Date and time|No
 
-### "Parcel deliveries" table
+### "Deliveries" table
 
 |No.|Name|Can be null?
 |-|-|-
 |1|ID|No
-|2|Parcel shipment ID|No
+|2|Shipment ID|No
 |3|Address ID|No
-|4|Delivery date and time|No
+|4|Date and time|No
 
 ### "Required payments" table
 
