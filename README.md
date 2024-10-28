@@ -2,6 +2,126 @@
 
 A blog documenting me learning of SQL and PostgreSQL
 
+## 28 Oct, 2024 (days 12 to 15)
+
+I decided not to post during the previous 3 days. The thing is, I have accidentally committed new DDL without checking whether it works. It was then that, first, I would push changes I was not sure they work and commit and push changes of the README, that is the blog entries, or, second, I would branch off and commit and push changes of the README onto the new branch, or, third, I would push nothing and check whether the new DDL work at first. I have chosen the third option, as the first was irresponsible, and the second seemed to be too much of a hard work with understanding again how Git branching works.
+
+So I have checked the new DDL, and it was not easy to do, but I think now me confidence about the DDL working is good enough. I can then commit changes of the README and push both the new DDL and changes of the README onto the main branch, as usual. Of course, I need to relearn Git branching soon regardless. I only hope to have more time.
+
+So, you can see the DDL for all the tables in the model at https://github.com/decision-making-mike/sql-postgresql-learning/blob/main/transport-company-database/tables-ddl.sql. As you can see, I have put all the DDL into one script. I think it would be too much of a hassle to maintain it in separate files especially that creation of some tables depends on the existance of other tables.
+
+I have also changed the way of verifying the DDL. Well, the verification is now more cumbersome than before as I needed to prepare two separate `select`s. It is due to me inability to handle all what I needed in one `select`, and this is because of of me shortcomings in understanding how SQL and PostgreSQL work. I am including the `select`s below.
+
+```sql
+-- First "select"
+
+-- Why the "select distinct" seems to work the way I
+--  expect it to? Here, it feels just too easy to believe
+--  that it accomplishes displaying distinct rows, that
+--  is, "distinct" in the way I understand it here.
+select distinct
+    c.table_name "Table",
+    case
+        when identity_generation is not null
+            then concat(c.column_name, ' (identity generation ', identity_generation, ')')
+        else c.column_name
+    end "Column",
+    case
+        when data_type = 'timestamp without time zone'
+            then 'timestamp (no tz)'
+        when data_type = 'character varying'
+            then concat('varchar (', character_maximum_length, ')')
+        else data_type
+    end "Data type",
+    -- In general I prefer sticking to a standard way of
+    --  doing something rather than coming
+    --  up with a custom way, like the one below,
+    --  employed by the usage of "case". But I
+    --  believe now the script does its job better.
+    --  However, I am not sure whether I can treat
+    --  "NO" and "NOT NULL" as equivalent here. If I
+    --  could, then what should be the reason of
+    --  introducing the syntax "NOT NULL" instead of
+    --  a syntax more aligned with the column name,
+    --  namely "IS NULLABLE" or similar? Or, why should
+    --  the column name, and semantics of course, not be
+    --  "NOT NULL"?
+    case
+        when is_nullable = 'YES'
+            then 'Nullable'
+        when is_nullable = 'NO'
+            then 'Not nullable'
+        else is_nullable
+    end "Is nullable?"
+from
+    information_schema.columns c
+    left join information_schema.key_column_usage kcu
+        on c.column_name = kcu.column_name
+where
+    -- Could my tables be in any other schema than
+    --  "public"? Can I assume this constraint will
+    --  always return all the tables I have created,
+    --  and only them?
+    c.table_schema = 'public'
+order by
+    c.table_name
+;
+
+-- Second "select"
+
+select
+    pgc1.relname "Table",
+    pga1.attname "Column",
+    case
+        when pg_constraint.contype = 'p'
+            then 'PK'
+        when pg_constraint.contype = 'f'
+            then concat('FK (', pgc2.relname, ',', pga2.attname, ')')
+        else pg_constraint.contype
+    end "Constraint"
+from
+    pg_constraint
+        cross join unnest(pg_constraint.conkey) unnest_conkey
+        -- That "1 = 1" is weird, it is a bad hack for
+        --  me, but the join seems to work. All in all,
+        --  the ultimate goal is that I will learn
+        --  through this code. It does not need to be
+        --  pretty. "Cross join" does not work for a
+        --  reason unknown to me.
+        left join unnest(pg_constraint.confkey) unnest_confkey
+            on 1 = 1
+        -- Sometimes I try to make a "left join" just
+        --  because I think it might work, regardless
+        --  whether it makes any sense to use it. Now it
+        --  apparently works. I hope I will some day
+        --  understand when to use all the joins.
+        left join pg_class pgc1
+            on pgc1.oid = pg_constraint.conrelid
+        left join pg_class pgc2
+            on pgc2.oid = pg_constraint.confrelid
+        join pg_attribute pga1
+            on
+                pg_constraint.conrelid = pga1.attrelid
+                and unnest_conkey = pga1.attnum
+        -- I am mot sure why there must be "left join"
+        --  for this join to work properly, that is,
+        --  not to hide anything other than foreign keys.
+        left join pg_attribute pga2
+            on
+                pg_constraint.confrelid = pga2.attrelid
+                and unnest_confkey = pga2.attnum
+where
+    -- Only table constraints
+    pg_constraint.conrelid <> 0
+;
+```
+
+### TODOs
+
+1. New database model tables adding consideration
+2. PostgreSQL documentation continuation
+3. Model implementation continuation
+
 ## 24 Oct, 2024 (day 11)
 
 I have been trying to verify that it actually works what I wrote in the scripts. I think I have succeeded. But, the way I have achieved it feels obscure enough for me to have a feeling that what I have done is, for some reason, redundant in normal database usage.
