@@ -2,6 +2,10 @@
 
 A blog documenting me learning of SQL and PostgreSQL
 
+## 29 Oct, 2024 (day 16)
+
+Other actitivies allowed me not to do anything.
+
 ## 28 Oct, 2024 (days 12 to 15)
 
 I decided not to post during the previous 3 days. The thing is, I have accidentally committed new DDL without checking whether it works. It was then that, first, I would push changes I was not sure they work and commit and push changes of the README, that is the blog entries, or, second, I would branch off and commit and push changes of the README onto the new branch, or, third, I would push nothing and check whether the new DDL work at first. I have chosen the third option, as the first was irresponsible, and the second seemed to be too much of a hard work with understanding again how Git branching works.
