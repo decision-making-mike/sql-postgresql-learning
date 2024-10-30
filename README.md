@@ -2,6 +2,16 @@
 
 A blog documenting me learning of SQL and PostgreSQL
 
+## 30 Oct, 2024 (day 17)
+
+I have added descriptions of columns.
+
+### TODOs
+
+1. New database model tables adding consideration
+2. PostgreSQL documentation continuation
+3. Model implementation continuation
+
 ## 29 Oct, 2024 (day 16)
 
 Other actitivies allowed me not to do anything.
