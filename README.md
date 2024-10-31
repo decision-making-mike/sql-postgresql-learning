@@ -2,6 +2,24 @@
 
 A blog documenting me learning of SQL and PostgreSQL
 
+## 31 Oct, 2024 (day 18)
+
+I have added description of tables.
+
+I have decided that currently I will not try to implement all the dependencies of tables I have specified in the model. It seems a better option to first read the documentation a bit. I may try to implement them when I will learn how to do it. But as I know not when exactly shall it be, and if at all, I have anyway decided to archive the model. This way I need not to update both the model and the database, should I decide to make changes in the database. So, there shall be less room for a bug.
+
+I have added a shell script to reset the database, or speaking differently, to recreate it. It first drops the database, then it creates it, then it creates the tables. I assumed it works properly just because I received no errors when executing it, and because the previous scripts for verifying the DDL returned data. You can view the script at https://github.com/decision-making-mike/sql-postgresql-learning/blob/main/transport-company-database/reset-database.sh.
+
+Having the reset script added, visibly left is there adding a file with commands for insertion of test data. I shall add a command executing this file to the reset script then.
+
+Yesterday and today I have also red a few pieces of information from the PostgreSQL documentation about constants.
+
+### TODOs
+
+1. New tables adding consideration
+2. PostgreSQL documentation continuation
+3. DML commands adding
+
 ## 30 Oct, 2024 (day 17)
 
 I have added descriptions of columns.
