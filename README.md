@@ -4,7 +4,7 @@ A blog documenting me learning of SQL and PostgreSQL
 
 ## 31 Oct, 2024 (day 18)
 
-I have added description of tables.
+I have added descriptions of tables.
 
 I have decided that currently I will not try to implement all the dependencies of tables I have specified in the model. It seems a better option to first read the documentation a bit. I may try to implement them when I will learn how to do it. But as I know not when exactly shall it be, and if at all, I have anyway decided to archive the model. This way I need not to update both the model and the database, should I decide to make changes in the database. So, there shall be less room for a bug.
 
