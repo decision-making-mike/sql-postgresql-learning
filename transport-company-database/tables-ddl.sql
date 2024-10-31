@@ -1,3 +1,5 @@
+-- This table stores information about people mentioned
+--  in any other table. A row represents a person.
 create table people (
     -- The ID of the person.
     id integer primary key generated always as identity,
@@ -16,6 +18,9 @@ create table people (
     name varchar(20) not null
 );
 
+-- This table stores information about companies
+--  mentioned in any other table. A row represents a
+--  company.
 create table companies (
     -- The ID of the company.
     id integer primary key generated always as identity,
@@ -30,9 +35,12 @@ create table companies (
     registration_number integer not null
 );
 
+-- This table stores information about what people
+--  represent what companies. A row represents the
+--  relationship that a person represents a company.
 create table people_companies (
-    -- The ID of the relationship between the and the
-    --  company.
+    -- The ID of the relationship between the person and
+    --  the company.
     id integer primary key generated always as identity,
     -- The ID of the person.
     person_id integer not null references people,
@@ -40,6 +48,9 @@ create table people_companies (
     company_id integer not null references companies
 );
 
+-- This table stores information about addresses
+--  mentioned in any other table. A row represents an
+--  address.
 create table addresses (
     -- The ID of the address.
     id integer primary key generated always as identity,
@@ -60,6 +71,8 @@ create table addresses (
     gps_location varchar(20) not null
 );
 
+-- This table stores information about vehicles that the
+--  company possesses. A row represents a vehicle.
 create table vehicles (
     -- The ID of the vehicle.
     id integer primary key generated always as identity,
@@ -73,6 +86,10 @@ create table vehicles (
     gps_location varchar(20) not null
 );
 
+-- This table stores information about orders. A row
+--  represents an order. The person placing the order,
+--  the person handing the cargo over and the person
+--  receiving the cargo can be the same person.
 create table orders (
     -- The ID of the order.
     id integer primary key generated always as identity,
@@ -93,6 +110,9 @@ create table orders (
     place_of_destination_address_id integer not null references addresses
 );
 
+-- This table stores information about individual parcels
+--  that the company handles within each order. A row
+--  represents a parcel.
 create table parcels (
     -- The ID of the parcel.
     id integer primary key generated always as identity,
@@ -102,6 +122,11 @@ create table parcels (
     estimated_weight_in_kg integer not null
 );
 
+-- This table stores information about shipments of
+--  individual parcels. A row represents a shipment. A
+--  shipment is always of a single parcel. A parcel can
+--  be shipped multiple times if the company wants to use
+--  one or more distribution centers as intermediaries.
 create table shipments (
     -- The ID of the shipment.
     id integer primary key generated always as identity,
@@ -117,6 +142,10 @@ create table shipments (
     date_and_time timestamp not null
 );
 
+-- This table stores information about deliveries of
+--  parcels. A parcel must be delivered the same number
+--  of times as it was shipped. A row represents a
+--  delivery.
 create table deliveries (
     -- The ID of the delivery.
     id integer primary key generated always as identity,
@@ -131,6 +160,13 @@ create table deliveries (
     date_and_time timestamp not null
 );
 
+-- This table stores information about payments
+--  that the clients of the company are required to pay.
+--  A single payment is for a single order. A client is
+--  supposed to be charged a payment for an order after
+--  all the parcels within this order have been
+--  delivered. A row represents a payment that is
+--  required.
 create table required_payments (
     -- The ID of the payment.
     id integer primary key generated always as identity,
@@ -143,7 +179,10 @@ create table required_payments (
     due_date interval day not null
 );
 
-create table done_payments (
+-- This table stores information about payments that the
+--  clients of the company have made. A row represents a
+--  payment that has been made.
+create table made_payments (
     -- The ID of the payment.
     id integer primary key generated always as identity,
     -- The ID of the required payment that corresponds to
