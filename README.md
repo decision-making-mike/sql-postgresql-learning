@@ -2,6 +2,20 @@
 
 A blog documenting me learning of SQL and PostgreSQL
 
+## 01 Nov, 2024 (day 19)
+
+I have added the DML. You can view it at https://github.com/decision-making-mike/sql-postgresql-learning/blob/main/transport-company-database/insert-data.sql.
+
+I have changed the name of the file with the DDL from `tables-ddl.sql` to `create-tables.sql`. As you can see, it now starts with a verb. I think the name now better conveys the fact that the file is a script, that is, a set of commands that **do** something. In the same manner have I formed the name of the file with the DDL, that is, `insert-data.sql`.
+
+The data have I handcrafted. I wanted to have something to insert now. I am thus able to perform basic queries. I think for me learning to have more of a demonstrational feel I might need to prepare more data. Should the future concur, I shall prepare a script generating random data, of arbitrary volume. In fact I would be glad to prepare such a script, if for now other reason than for the feel of automatizing me work.
+
+### TODOs
+
+1. New tables adding consideration
+2. PostgreSQL documentation continuation
+3. Some basic queries thinking about
+
 ## 31 Oct, 2024 (day 18)
 
 I have added descriptions of tables.
