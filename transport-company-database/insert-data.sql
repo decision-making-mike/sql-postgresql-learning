@@ -14,7 +14,9 @@ values
     ('Maggie Ten')
 ;
 
-insert into companies (registration_number)
+insert into companies (
+    registration_number
+)
 values
     (1),
     (2),
