@@ -2,9 +2,12 @@
 
 set -eo pipefail
 
-if [[ ! -f tables-ddl.sql ]]
+TABLES_CREATION_FILE=create-tables.sql
+DATA_INSERTION_FILE=insert-data.sql
+
+if [[ ! -f "$TABLES_CREATION_FILE" || ! -f "$DATA_INSERTION_FILE" ]]
 then
-    echo "DDL file missing error" 1>&2
+    echo "File missing error" 1>&2
     exit 1
 fi
 
@@ -23,10 +26,21 @@ fi
 psql \
     transport-company \
     -U h \
-    -f tables-ddl.sql
+    -f "$TABLES_CREATION_FILE"
 
 if [[ $? != 0 ]]
 then
     echo "Tables creation error" 1>&2
+    exit 1
+fi
+
+psql \
+    transport-company \
+    -U h \
+    -f "$DATA_INSERTION_FILE"
+
+if [[ $? != 0 ]]
+then
+    echo "Data insertion error" 1>&2
     exit 1
 fi

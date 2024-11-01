@@ -176,7 +176,7 @@ create table required_payments (
     -- The amount of money to pay.
     amount integer not null,
     -- The due date of the payment.
-    due_date interval day not null
+    due_date date not null
 );
 
 -- This table stores information about payments that the
@@ -189,5 +189,5 @@ create table made_payments (
     --  this payment.
     required_payment_id integer not null references required_payments,
     -- The date of the payment.
-    date interval day not null
+    date date not null
 );
