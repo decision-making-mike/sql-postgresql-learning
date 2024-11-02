@@ -2,6 +2,16 @@
 
 A blog documenting me learning of SQL and PostgreSQL
 
+## 02 Nov, 2024 (day 20)
+
+Other actitivies allowed me not to do anything.
+
+### TODOs
+
+1. New tables adding consideration
+2. PostgreSQL documentation continuation
+3. Some basic queries thinking about
+
 ## 01 Nov, 2024 (day 19)
 
 I have added the DML. You can view it at https://github.com/decision-making-mike/sql-postgresql-learning/blob/main/transport-company-database/insert-data.sql.
