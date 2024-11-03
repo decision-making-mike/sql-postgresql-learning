@@ -2,6 +2,17 @@
 
 A blog documenting me learning of SQL and PostgreSQL
 
+## 03 Nov, 2024 (day 21)
+
+I have red chapter 21 of the documentation, and a bit
+of chapter 20.
+
+### TODOs
+
+1. New tables adding consideration
+2. PostgreSQL documentation continuation
+3. Some basic queries thinking about
+
 ## 02 Nov, 2024 (day 20)
 
 Other actitivies allowed me not to do anything.
