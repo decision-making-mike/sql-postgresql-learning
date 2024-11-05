@@ -13,7 +13,6 @@ fi
 
 psql \
     template1 \
-    -U h \
     -c 'drop database "transport-company";' \
     -c 'create database "transport-company";'
 
@@ -25,7 +24,6 @@ fi
 
 psql \
     transport-company \
-    -U h \
     -f "$TABLES_CREATION_FILE"
 
 if [[ $? != 0 ]]
@@ -36,7 +34,6 @@ fi
 
 psql \
     transport-company \
-    -U h \
     -f "$DATA_INSERTION_FILE"
 
 if [[ $? != 0 ]]
