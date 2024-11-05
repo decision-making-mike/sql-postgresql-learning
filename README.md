@@ -2,6 +2,16 @@
 
 A blog documenting me learning of SQL and PostgreSQL
 
+## 05 Nov, 2024 (day 23)
+
+I have successfully logged in to the PostgreSQL server using a user name map. I needed to define the map in `pg_ident.conf`, put its name in `pg_hba.conf`, and reread `pg_ident.conf` by executing the query `select pg_reload_conf();`.
+
+### TODOs
+
+1. New tables adding consideration
+2. PostgreSQL documentation continuation
+3. Some basic queries thinking about
+
 ## 04 Nov, 2024 (day 22)
 
 I have completed chapter 20 of the documentation.
@@ -14,8 +24,7 @@ I have completed chapter 20 of the documentation.
 
 ## 03 Nov, 2024 (day 21)
 
-I have red chapter 21 of the documentation, and a bit
-of chapter 20.
+I have red chapter 21 of the documentation, and a bit of chapter 20.
 
 ### TODOs
 
