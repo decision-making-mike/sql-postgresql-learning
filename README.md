@@ -2,6 +2,54 @@
 
 A blog documenting me learning of SQL and PostgreSQL
 
+## 06 Nov, 2024 (day 24)
+
+I wanted to see an ERD from me database. So, I installed `pgAdmin3`. On connecting to the server as the user `postgres` I got
+
+```
+Error: Error connecting to the server. FATAL: Peer authentication failed for user "postgres"
+```
+
+Turned out I forgot about the map I mentioned yesterday, and that I commented it. Uncommented, tried, still getting the error. Turned out I forgot to `systemctl restart postgresql`.
+
+After connecting, I got three errors, consecutively after pressing `OK` each time, starting with
+
+```
+Error: ERROR:  column "proisagg does not exist
+LINE 9:  WHERE proisagg = FALSE AND namespace = 2200::oid
+```
+
+and then
+
+```
+ERROR:  column rel.relhasoids does not exist
+LINE 1: ...t_userbyid(rel.relowner) AS relowner, rel.relacl, rel.relhas...
+```
+and finally yet another error I have not noted.
+
+Then, when I looked up the tables in the "Object browser", it turned out there are not any. But the sequences was there. Moreover, when I was clicking on the "Tables" element, I was getting the above error about `rel.relhasoids`.
+
+In https://dba.stackexchange.com/a/270930 they suggest a solution of installing a newer version of pgAdmin. It is applicable in me case as I have version 12 of PostgreSQL installed. But is there maybe a quicker method?
+
+In https://stackoverflow.com/questions/59094036/pg-upgrade-errors there is described a similar error. It there inspired a solution of readding the server to pgAdmin. Worked not in me case.
+
+Seemed Google has no other solutions for me. So, I decided to install a newer version of pgAdmin. https://www.pgadmin.org/download/pgadmin-4-apt/ was instructing to set up the pgAdmin APT repository to be able to download and install.
+
+I tried names of various Debian versions for me Mint for `https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/<name>`, and encountered several errors. I finally managed to install pgAdmin, that is, `pgAdmin4`, with the name `bullseye`.
+
+There was an entry `pgAdmin 4` in the programs menu, but I wanted to know how to run the new version from the CLI. Typing `pgadminTAB` results in `pgadmin3`, as before the installation. That reminded me to remove `pgadmin3`, just in case Linux should decide to trouble me with problems about an incompatible version of a script, library or something. I then decided not to search for a binary now.
+
+After running pgAdmin from the programs menu I got a "fatal error", with the message `The pgAdmin 4 server could not be contacted` followed by a dump of the "pgAdmin Runtime Environment". Maybe the errors during adding the repository and installation made the versions of some packages incompatible? Anyway, https://stackoverflow.com/a/73442717/27799074 was suggesting a solution similar to reinstalling pgAdmin, so I decided I can do just that. I know not why, but it worked, pgAdmin ran successfully. Now I see both sequences and tables.
+
+So, back to CLI. Where is the binary? I realized I can just check it in the properties of the programs menu entry. It is `/usr/pgadmin4/bin/pgadmin4`. I preferred though `export PATH="/usr/pgadmin4/bin:$PATH"`.
+
+# TODOs
+
+1. New tables adding consideration
+2. PostgreSQL documentation continuation
+3. Some basic queries thinking about
+4. pgAdmin4 ERD making
+
 ## 05 Nov, 2024 (day 23)
 
 I have successfully logged in to the PostgreSQL server using a user name map. I needed to define the map in `pg_ident.conf`, put its name in `pg_hba.conf`, and reread `pg_ident.conf` by executing the query `select pg_reload_conf();`.
