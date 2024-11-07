@@ -2,6 +2,52 @@
 
 A blog documenting me learning of SQL and PostgreSQL
 
+## 07 Nov, 2024 (day 25)
+
+Today, doing some maintenance on me system I encountered a message from apt that `The following packages have been kept back:  postgresql`. It looked odd to me insomuch I remember not to ever see such a message about "packages having been kept" before. It was appearing in the output of `apt upgrade`.
+
+I turned to Google for more info. This message was mentioned in the context of the so-called "phased updates" in Ubuntu, in the 2022 answer of ArrayBolt3 in https://askubuntu.com/questions/1431940/what-are-phased-updates-and-why-does-ubuntu-use-them.
+
+A reference to this message have I also found in a 2005 blog post at https://www.brain-dump.org/blog/apt-keeps-packages-back/. The author, Marc André Tanner, mentions not "phased updates", but says that "[m]aybe the package has broken or new dependencies".
+
+Some clarity is brought by https://documentation.ubuntu.com/server/explanation/software/about-apt-upgrade-and-phased-updates/. It specifically reads that "[i]f you've ever used combinations of packages from different releases or third party repos, you may be familiar with this message already. However, it has become a much more common occurrence due to something called 'phased updates'". It goes on to say that "you don't need to do anything about the 'packages kept back' message – you can safely ignore it". But I could not as I was still unsure if it is a phased update in me case or something else.
+
+Ubuntu said that to know more about specific packages having phased updates I can `apt policy <package-name>`. When I `apt policy postgresql`ed, I got no info about an update being phased. Let us dig deeper!
+
+On a side note, Ubuntu notes "[t]here is a bug report currently active about the fact that the 'kept back' message is not as informative as it could be, and the issue is on our radar". I like it as I value intuitiveness of software and clarity in communication, regardless whether I regard the message itself unclear or not.
+
+Let us try to upgrade directly the package `postgresql`. I put below the last part of the output of `apt upgrade postgresql`.
+
+```
+Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+ postgresql : Depends: postgresql-17 but it is not going to be installed
+E: Broken packages
+```
+
+What I could understand from this is that the package `postgresql` could not be updated. The reason was, the update depended on having installed the package `postgresql-17`, and I had it not.
+
+I understand that a package may depend on another package. But for me `man apt` suggests that it would automatically install dependencies. It reads under "upgrade" that "[n]ew packages will be installed if required to satisfy dependencies (…)".
+
+OK, googling I see that to verify this suggestion seems to be a thing on its own. I would rather move forward with the actual problem. Let us simply assume that apt, for any reason, can not automatically install the dependency `postgresql-17`.
+
+Let us see what should `apt install postgresql-17` tell us. It returns the same message as above that "[s]ome packages could not be installed". Further it says that `The following packages have unmet dependencies:`, and it shows a bunch of unmet dependencies for `postgresql-17`. Finally `E: Unable to correct problems, you have held broken packages.`. The names of most of the packages tell me nothing regarding the context of PostgreSQL. Only `postgresql-client-17` looks familiar.
+
+I think that this is a good place to stop investigating the issue for today. Maybe tomorrow will bring us more success.
+
+# TODOs
+
+1. New tables adding consideration
+2. PostgreSQL documentation continuation
+3. Some basic queries thinking about
+4. pgAdmin4 ERD making
+5. PostgreSQL upgrade problem solving
+
 ## 06 Nov, 2024 (day 24)
 
 I wanted to see an ERD from me database. So, I installed `pgAdmin3`. On connecting to the server as the user `postgres` I got
@@ -112,7 +158,7 @@ I have decided that currently I will not try to implement all the dependencies o
 
 I have added a shell script to reset the database, or speaking differently, to recreate it. It first drops the database, then it creates it, then it creates the tables. I assumed it works properly just because I received no errors when executing it, and because the previous scripts for verifying the DDL returned data. You can view the script at https://github.com/decision-making-mike/sql-postgresql-learning/blob/main/transport-company-database/reset-database.sh.
 
-Having the reset script added, visibly left is there adding a file with commands for insertion of test data. I shall add a command executing this file to the reset script then.
+Having the reset script added, visibly left is there adding a file with commands for insertion of test data. I shall add a command executing this file to the reset script then.
 
 Yesterday and today I have also red a few pieces of information from the PostgreSQL documentation about constants.
 
@@ -342,7 +388,7 @@ I have created separate tables for companies and the relations between companies
 
 I have created the people, companies and vehicles tables. But I will not present the DDL yet because I have not checked whether the tables are created properly. Even considering I saw not any errors.
 
-As soon as all the DDL is prepared and published, I plan to archive the model. By that I mean to move the file with it to an "archive" directory within the repository and change it not anymore. I should concentrate solely on the database. I believe in such a small, learning project like this it is reasonable to stick to one source of truth. It is better not to have to update multiple places with a single change, like both the model and the database. Saves me time and mistakes.
+As soon as all the DDL is prepared and published, I plan to archive the model. By that I mean to move the file with it to an "archive" directory within the repository and change it not anymore. I should concentrate solely on the database. I believe in such a small, learning project like this it is reasonable to stick to one source of truth. It is better not to have to update multiple places with a single change, like both the model and the database. Saves me time and mistakes.
 
 ### TODOs
 
@@ -389,7 +435,7 @@ I should note I base the model not on any strict rules. I mean it not to represe
 
 I have figured out how to push the Git changes to GitHub through the command line. Now I can do things unavailable through the GitHub website, like amending a commit.
 
-I have updated the model a bit. I have removed the terms "consignor" and "consignee" from the "Orders" table. First, as far as I know, they were not relevant to this model. Second, I could not figure out what I had really meant by them. Instead, I am now making use in that table of the terms "Cargo handing over person" and "Cargo receiving person". I have also added the information what person has placed the order. I have reorganized the file with the model for readability.
+I have updated the model a bit. I have removed the terms "consignor" and "consignee" from the "Orders" table. First, as far as I know, they were not relevant to this model. Second, I could not figure out what I had really meant by them. Instead, I am now making use in that table of the terms "Cargo handing over person" and "Cargo receiving person". I have also added the information what person has placed the order. I have reorganized the file with the model for readability.
 
 ### TODOs
 
