@@ -6,7 +6,7 @@ A blog documenting me learning of SQL and PostgreSQL
 
 Trial-and-erroring I was able to determine that for apt to see the upgrade for `postgresql` there is responsible a repository related to PostgreSQL. Its line is `deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt bookworm-pgdg main`. I remember not adding it. But there is a chance I have, given the same line appears at https://wiki.postgresql.org/wiki/Apt.
 
-Anyway, there remains the question what to do with the failing update. https://askubuntu.com/questions/563178/the-following-packages-have-unmet-dependencies suggested `apt-get install -f`, so I looked up the man page, but I was seeing not clearly what should `-f` do, and anything I should expect from it, I believe it did it not as the output of `apt upgrade postgresql` stayed the same.
+Anyway, there remains the question what to do with the failing update. https://askubuntu.com/questions/563178/the-following-packages-have-unmet-dependencies suggested `apt-get install -f`, so I looked up the man page, but I was seeing not clearly what should `-f` do, and anything I should expect from it I believe it did it not as the output of `apt upgrade postgresql` stayed the same.
 
 The mentioned link suggested using aptitude. But `aptitude upgrade` seemed to have similar, if not the same, output as in the case of apt.
 
