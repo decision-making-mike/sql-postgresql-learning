@@ -2,6 +2,29 @@
 
 A blog documenting me learning of SQL and PostgreSQL
 
+## 08 Nov, 2024 (day 26)
+
+Trial-and-erroring I was able to determine that for apt to see the upgrade for `postgresql` there is responsible a repository related to PostgreSQL. Its line is `deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt bookworm-pgdg main`. I remember not adding it. But there is a chance I have, given the same line appears at https://wiki.postgresql.org/wiki/Apt.
+
+Anyway, there remains the question what to do with the failing update. https://askubuntu.com/questions/563178/the-following-packages-have-unmet-dependencies suggested `apt-get install -f`, so I looked up the man page, but I was seeing not clearly what should `-f` do, and anything I should expect from it, I believe it did it not as the output of `apt upgrade postgresql` stayed the same.
+
+The mentioned link suggested using aptitude. But `aptitude upgrade` seemed to have similar, if not the same, output as in the case of apt.
+
+https://askubuntu.com/questions/140246/how-do-i-resolve-unmet-dependencies-after-adding-a-ppa suggested `apt-get dist-upgrade`, but its output was similar, if not the same, as `apt upgrade`.
+
+For the purpose of not using the rest of the time for this project for upgrading packages, I considered it also having failed to manually install problematic dependencies. I tried `apt install postgresql-17`. It showed, among others, `Depends: postgresql-client-17 but it is not going to be installed`. `apt install postgresql-client-17` showed, among others, `Depends: libpq5 (>= 17.0) but 16.4-1.pgdg110+1 is to be installed`. `apt show -a libpq5` showed 8 versions of `libpq5`, the, I believe, newest one being `17.0-1.pgdg120+1`. `apt install libpq5=17.0-1.pgdg120+1` showed, among others, `Depends: libc6 (>= 2.33) but 2.31-0ubuntu9.16 is to be installed`. `apt install libc6=2.31-0ubuntu9.16` told me `libc6 is already the newest version (2.31-0ubuntu9.16).` Well, libc6, that is great, but you see…
+
+What remains, not to spend too much time for? I thought I could `apt purge postgresql`, then `apt upgrade`, then `apt install postgresql`. I have not done any customizations nor configuration to me PostgreSQL, and after all this project aims at learning. After doing this, though, I realized now I both no more had the metapackage `postgresql`, and could not install it. `apt install postgresql` showed the dependency `postgresql-17` still there. I resolved to `apt remove postgresql-*` and `apt autoremove`, and `apt install postgresql`. The last command failed as before, and even `apt install postgresql-12` failed.
+
+# TODOs
+
+1. New tables adding consideration
+2. PostgreSQL documentation continuation
+3. Some basic queries thinking about
+4. pgAdmin4 ERD making
+5. PostgreSQL upgrade problem solving
+6. Repository disabling and PostgreSQL reinstalling considering
+
 ## 07 Nov, 2024 (day 25)
 
 Today, doing some maintenance on me system I encountered a message from apt that `The following packages have been kept back:  postgresql`. It looked odd to me insomuch I remember not to ever see such a message about "packages having been kept" before. It was appearing in the output of `apt upgrade`.
