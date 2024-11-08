@@ -16,7 +16,7 @@ For the purpose of not using the rest of the time for this project for upgrading
 
 What remains, not to spend too much time for? I thought I could `apt purge postgresql`, then `apt upgrade`, then `apt install postgresql`. I have not done any customizations nor configuration to me PostgreSQL, and after all this project aims at learning. After doing this, though, I realized now I both no more had the metapackage `postgresql`, and could not install it. `apt install postgresql` showed the dependency `postgresql-17` still there. I resolved to `apt remove postgresql-*` and `apt autoremove`, and `apt install postgresql`. The last command failed as before, and even `apt install postgresql-12` failed.
 
-# TODOs
+### TODOs
 
 1. New tables adding consideration
 2. PostgreSQL documentation continuation
@@ -63,7 +63,7 @@ Let us see what should `apt install postgresql-17` tell us. It returns the same 
 
 I think that this is a good place to stop investigating the issue for today. Maybe tomorrow will bring us more success.
 
-# TODOs
+### TODOs
 
 1. New tables adding consideration
 2. PostgreSQL documentation continuation
@@ -112,7 +112,7 @@ After running pgAdmin from the programs menu I got a "fatal error", with the mes
 
 So, back to CLI. Where is the binary? I realized I can just check it in the properties of the programs menu entry. It is `/usr/pgadmin4/bin/pgadmin4`. I preferred though `export PATH="/usr/pgadmin4/bin:$PATH"`.
 
-# TODOs
+### TODOs
 
 1. New tables adding consideration
 2. PostgreSQL documentation continuation
