@@ -2,6 +2,19 @@
 
 A blog documenting me learning of SQL and PostgreSQL
 
+## 09 Nov, 2024 (day 27)
+
+Other activities allowed me not to do anything.
+
+### TODOs
+
+1. New tables adding consideration
+2. PostgreSQL documentation continuation
+3. Some basic queries thinking about
+4. pgAdmin4 ERD making
+5. PostgreSQL upgrade problem solving
+6. Repository disabling and PostgreSQL reinstalling considering
+
 ## 08 Nov, 2024 (day 26)
 
 Trial-and-erroring I was able to determine that for apt to see the upgrade for `postgresql` there is responsible a repository related to PostgreSQL. Its line is `deb [signed-by=/usr/share/postgresql-common/pgdg/apt.postgresql.org.asc] https://apt.postgresql.org/pub/repos/apt bookworm-pgdg main`. I remember not adding it. But there is a chance I have, given the same line appears at https://wiki.postgresql.org/wiki/Apt.
@@ -151,7 +164,7 @@ I have red chapter 21 of the documentation, and a bit of chapter 20.
 
 ## 02 Nov, 2024 (day 20)
 
-Other actitivies allowed me not to do anything.
+Other activities allowed me not to do anything.
 
 ### TODOs
 
@@ -203,7 +216,7 @@ I have added descriptions of columns.
 
 ## 29 Oct, 2024 (day 16)
 
-Other actitivies allowed me not to do anything.
+Other activities allowed me not to do anything.
 
 ## 28 Oct, 2024 (days 12 to 15)
 
