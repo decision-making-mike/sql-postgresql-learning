@@ -2,6 +2,25 @@
 
 A blog documenting me learning of SQL and PostgreSQL
 
+## 10 Nov, 2024 (day 28)
+
+I decided to try afresh with the upgrade of PostgreSQL.
+
+I first removed the file `/etc/apt/sources.list.d/pg.sources`. At https://www.postgresql.org/download/ they say PostgreSQL is available for a couple of Linux distributions, but not Mint specifically. But this was not quite a problem for me as I knew Mint is based on Ubuntu. `https://www.postgresql.org/download/linux/ubuntu/` says that "[i]f the version [of PostgreSQL] included in your version of Ubuntu is not the one you want, you can use the [PostgreSQL Apt Repository](https://apt.postgresql.org/)". So, I followed the instructions available at the link given.
+
+Now there came `apt.postgresql.org.sh`, and there came the problem of choosing the distribution name. I recall I was previously choosing names of Debian distributions. That could be the reason the upgrade had not worked. Now I checked what me `una` is based on. It was `focal`, a Ubuntu distribution. So, I guessed this name should let the installation work.
+
+And the installation worked. I first `apt.postgresql.org.sh`ed without errors. I then `sudo apt upgrade`d without errors, or any problems with packages "kept back". I then `sudo apt install postgresql`ed without errors. I finally `pg_config --version`ed to happily see the output being `PostgreSQL 17.0 (Ubuntu 17.0-1.pgdg20.04+1)`.
+
+Every such a problem reveals that I still know less about Linux than I would like to. And solving it teaches. I am thus glad to have it experienced and solved. To new tasks!
+
+### TODOs
+
+1. New tables adding consideration
+2. PostgreSQL documentation continuation
+3. Some basic queries thinking about
+4. pgAdmin4 ERD making
+
 ## 09 Nov, 2024 (day 27)
 
 Other activities allowed me not to do anything.
@@ -441,7 +460,7 @@ I now plan to read part II and III. Of course, I expect not to complete them bef
 
 I believe reading other parts, that is IV to VII, should not be of me interest during me forseeable learning of PostgreSQL.
 
-Beyond reading, I believe to have successfully created a database, then `pg_dumpall`ed, then `drop`ed this database, and finally restored it with `psql -f`.
+Beyond reading, I believe to have successfully created a database, then `pg_dumpall`ed, then `drop`ped this database, and finally restored it with `psql -f`.
 
 I have created a table with `create table` and displayed it with `\dt`. I have inserted a row thereinto with `insert into` and displayed it with `select`.
 
