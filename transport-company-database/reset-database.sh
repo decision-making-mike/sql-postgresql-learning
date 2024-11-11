@@ -2,6 +2,10 @@
 
 set -eo pipefail
 
+PORT="$1"
+if [[ -z "$PORT" ]]
+then PORT=5432
+fi
 TABLES_CREATION_FILE=create-tables.sql
 DATA_INSERTION_FILE=insert-data.sql
 
@@ -12,6 +16,8 @@ then
 fi
 
 psql \
+    -U postgres \
+    -p "$PORT" \
     template1 \
     -c 'drop database "transport-company";' \
     -c 'create database "transport-company";'
@@ -23,6 +29,8 @@ then
 fi
 
 psql \
+    -U postgres \
+    -p "$PORT" \
     transport-company \
     -f "$TABLES_CREATION_FILE"
 
@@ -33,6 +41,8 @@ then
 fi
 
 psql \
+    -U postgres \
+    -p "$PORT" \
     transport-company \
     -f "$DATA_INSERTION_FILE"
 
