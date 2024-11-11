@@ -20,7 +20,7 @@ pgadmin showed not the database `transport-company`. I know not the reason. Two 
 
 The diagram looked quite nice. I knew not whether I liked the default alignment, but it was hard to align better. As for alternatives, for example https://superuser.com/a/71752/2262997 recommended Visio. But I felt not like dealing with searching, registering or downloading, setting the software up and at the end finding that it will not work with a PostgreSQL database. And I anyway wanted not to be too particular here. Possibly I, as a beginner, already get much out of the box. Let us concentrate on the big picture. After all, in case of me database I shall not be in too big a need for an ERD diagram. I can enumerate all the tables off the top of me head. That should suffice for what I have planned, that is, to write just a couple of example queries, or even add a couple of new tables.
 
-Lastly for today, I need to correct a mistake I did when I was starting this blog. I am going to publish a summary not on 14 November, as I have written, but one day before, on 13 November. The period of 30 days started on 14 October, so it has to end on 12 November.
+Lastly for today, I need to correct a mistake I did when I was starting this blog. I am going to publish a summary not on 14 November, as I have written, but one day before, on 13 November. The period of 30 days started on 14 October, so it has to end on 12 November. I will publish the summary the next day after the last day.
 
 ### TODOs
 
