@@ -2,6 +2,32 @@
 
 A blog documenting me learning of SQL and PostgreSQL
 
+## 11 Nov, 2024 (day 29)
+
+I wanted to make the ERD diagram. But pgadmin refused to connect to the server, and so did psql. I decided to first deal with psql.
+
+The first subproblem turned out to be that, for some mysterious reason, the server now listens on a different port. I found the new port in the logs and manually fed psql with it.
+
+The second subproblem turned out to be mismatched usernames. I used `sudo -u`, and this made psql run successfully.
+
+But wait. Was it not ugly to had to manually specify the username as well as the port when I knew psql could do without them?
+
+It was, and so I wanted to make it prettier. I first tried to deal with usernames. I defined a user name map in `pg_ident.conf`, but `psql` still was deciding to error. Without `sudo -u`, it was erroring with `role <role name> does not exist`. With it, it was erroring with `Peer authentication failed for the user <username>`.
+
+I replaced `sudo -u` for the option `-U` of `psql`. Then psql worked. Less one command it was, so less ugly it was, but still too complex. But I found no immediate solutions, both for the username and the port, and so I decided to focus on making pgadmin work. Luckily, it now just started to work without any further intervention. By the way, worth noting, it required providing the password for the user `postgres` for some reason, whereas psql did not.
+
+pgadmin showed not the database `transport-company`. I know not the reason. Two comes to me mind, that is, either  the removal of PostgreSQL included removing databases, or the current version of PostgreSQL uses another directory for them. Anyway, I just recreated the database, with me script `reset-database.sh`. I had to change the script of course before so that the `psql` invokations there match the one I have now determined to work. The recreation ran without more errors than the expected `ERROR:  database "transport-company" does not exist`. I clicked "Refresh" and pgadmin started to display the new database.
+
+The diagram looked quite nice. I knew not whether I liked the default alignment, but it was hard to align better. As for alternatives, for example https://superuser.com/a/71752/2262997 recommended Visio. But I felt not like dealing with searching, registering or downloading, setting the software up and at the end finding that it will not work with a PostgreSQL database. And I anyway wanted not to be too particular here. Possibly I, as a beginner, already get much out of the box. Let us concentrate on the big picture. After all, in case of me database I shall not be in too big a need for an ERD diagram. I can enumerate all the tables off the top of me head. That should suffice for what I have planned, that is, to write just a couple of example queries, or even add a couple of new tables.
+
+Lastly for today, I need to correct a mistake I did when I was starting this blog. I am going to publish a summary not on 14 November, as I have written, but one day before, on 13 November. The period of 30 days started on 14 October, so it has to end on 12 November.
+
+### TODOs
+
+1. New tables adding consideration
+2. PostgreSQL documentation continuation
+3. Some basic queries thinking about
+
 ## 10 Nov, 2024 (day 28)
 
 I decided to try afresh with the upgrade of PostgreSQL.
