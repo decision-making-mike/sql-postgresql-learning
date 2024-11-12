@@ -2,6 +2,26 @@
 
 A blog documenting me learning of SQL and PostgreSQL
 
+## 12 Nov, 2024 (day 30)
+
+Interesting news when it comes to the manual port supplying problem.
+
+First, I have found out that when PostgreSQL starts, it reads the configuration file `/etc/postgresql/<version name>/<cluster name>/postgresql.conf`.
+
+Second, incidentally, I have found out that since the upgrade there remain on me machine some files from the previous version of PostgreSQL. Notably, said configuration file.
+
+Third, I have learned that a PostgreSQL cluster is related to a port. Specifically, https://stackoverflow.com/a/15101962/27799074 explains that each cluster uses a different port.
+
+I know these things may seem unrelated, but the whole thing is too much work for today. Therefore, I will today post not further, and just add a TODO.
+
+### TODOs
+
+1. New tables adding consideration
+2. PostgreSQL documentation continuation
+3. Some basic queries thinking about
+4. Further cluster and port relationship discovery
+5. `postgresql.conf` `port` and `cluster_name` settings setting and unsetting no `-p` and `--cluster` `psql` invokation results matrix preparation
+
 ## 11 Nov, 2024 (day 29)
 
 I wanted to make the ERD diagram. But pgadmin refused to connect to the server, and so did psql. I decided to first deal with psql.
