@@ -8,7 +8,7 @@ Yesterday was the last day of me SQL and PostgreSQL 30 day learning. I have plan
 
 I have been learning 27 days, that is, excluding days 16, 20 and 27.
 
-I have been blogging 24 days, that is, from day 4 to 11, and from day 15 to 30. Blogging days includes days when I learned not, for I blogged I had learned not. Should I say I can work systematically, regularly? Probably not. Room for improvement.
+I have been blogging 24 days, that is, from day 4 to 11, and from day 15 to 30. Blogging days include days when I learned not, for I blogged I had learned not. Should I say I can work systematically, regularly? Probably not. Room for improvement.
 
 I have red the preface and part I, and a small part of part II of the PostgreSQL documentation. Disappointing! How should I learn databases properly without theory? Need to step up me game. Of course, I have also red about various things on the net.
 
