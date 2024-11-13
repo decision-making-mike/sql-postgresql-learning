@@ -20,7 +20,7 @@ I have made 70 commits to the [repository](https://github.com/decision-making-mi
 
 What next? I think I will continue learning SQL and PostgreSQL, thus publishing on this blog. I feel I have enough to learn yet, that is, not to feel bored. But I am considering changing setting goals from "learn that many days" to "do this task".
 
-What will I learn in particular? The PostgreSQL documentation notices in Preface, on page xxxii, that "[e]very PostgreSQL user should read [part II]", and also that "[e]veryone who runs a PostgreSQL server, be it for private use or for others, should read [part III]". Those parts wish I to read, and that reading should I then blog about.
+What will I learn in particular? The PostgreSQL documentation notices in the preface, on page xxxii, that "[e]very PostgreSQL user should read [part II]", and also that "[e]veryone who runs a PostgreSQL server, be it for private use or for others, should read [part III]". Those parts wish I to read, and that reading should I then blog about.
 
 I might also make a shift to data analysis, maybe even data science. But I yet know not how learning them could be relevant to SQL. And to analyze data I need the data. I would need to generate some (vide day 19, [here](https://decision-making-mike.github.io/sql-postgresql-learning/#01-nov-2024-day-19)).
 
