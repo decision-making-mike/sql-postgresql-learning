@@ -2,6 +2,42 @@
 
 A blog documenting me learning of SQL and PostgreSQL
 
+## 13 Nov, 2024 (summary)
+
+Yesterday was the last day of me SQL and PostgreSQL 30 day learning. I have planned to publish a summary today, and so am I doing.
+
+I have been learning 27 days, that is, excluding days 16, 20 and 27.
+
+I have been blogging 24 days, that is, from day 4 to 11, and from day 15 to 30. Blogging days includes days when I learned not, for I blogged I had learned not. Should I say I can work systematically, regularly? Probably not. Room for improvement.
+
+I have red the preface and part I, and a small part of part II of the PostgreSQL documentation. Disappointing! How should I learn databases properly without theory? Need to step up me game. Of course, I have also red about various things on the net.
+
+I have installed 2 versions of PostgreSQL, that is, 12 and 17. Would venture a guess that in most cases, at least, it is a good thing to aim for the latest stable version of an application.
+
+I have created 1 database, 11 `create table`s and 11 `insert into`s, and 2 not so simple `select`s. I have encountered multiple errors when installing software and testing code. At least some of them was I able to handle.
+
+I have made 70 commits to the [repository](https://github.com/decision-making-mike/sql-postgresql-learning) of this blog. As of today, there are 7 files, that is, 2 SQL scripts, 1 shell script, 2 markdown files, 1 text file and the file `.gitattributes`. The SQL scripts contain not the aforementioned 2 `select`s, these you can see on the blog (days 12 to 15, [here](https://decision-making-mike.github.io/sql-postgresql-learning/#28-oct-2024-days-12-to-15)).
+
+What next? I think I will continue learning SQL and PostgreSQL, thus publishing on this blog. I feel I have enough to learn yet, that is, not to feel bored. But I am considering changing setting goals from "learn that many days" to "do this task".
+
+What will I learn in particular? The PostgreSQL documentation notices in Preface, on page xxxii, that "[e]very PostgreSQL user should read [part II]", and also that "[e]veryone who runs a PostgreSQL server, be it for private use or for others, should read [part III]". Those parts wish I to read, and that reading should I then blog about.
+
+I might also make a shift to data analysis, maybe even data science. But I yet know not how learning them could be relevant to SQL. And to analyze data I need the data. I would need to generate some (vide day 19, [here](https://decision-making-mike.github.io/sql-postgresql-learning/#01-nov-2024-day-19)).
+
+I still can not say I know basics of PostgreSQL and SQL. And I am not sure when will I be able to say so. After reading parts II and III of the PostgreSQL documentation? After crafting 100 complex `select`s?
+
+I wish to make me learning and knowledge more tangible, more measurable. I thus wish to focus on learning to solve any SQL problem, and to show it on this blog. Be this solving with the aid of official documentation, Stack Overflow, or what not. To do it, I should expect meself to have especial motivation. Solving problems was the thing I enjoyed the most during me learning. For example, dealing with an error. Simple input and output, we got errors, we got no errors.
+
+I need to think about all this.
+
+### TODOs
+
+1. New tables adding consideration
+2. PostgreSQL documentation continuation
+3. Some basic queries thinking about
+4. Further cluster and port relationship discovery
+5. `postgresql.conf` `port` and `cluster_name` settings setting and unsetting no `-p` and `--cluster` `psql` invokation results matrix preparation
+
 ## 12 Nov, 2024 (day 30)
 
 Interesting news when it comes to the manual port supplying problem.
