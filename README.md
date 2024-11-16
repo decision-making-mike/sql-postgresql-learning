@@ -2,6 +2,20 @@
 
 A blog documenting me learning of SQL and PostgreSQL
 
+## 14 Nov, 2024
+
+I have changed the theme of the blog.
+
+I was able to make GitHub display SQL usage statistics. That is, you can now see "SQL" usage statistics on the bar in the section "Languages" in the [repository view](https://github.com/decision-making-mike/sql-postgresql-learning). Before you could see only "HTML" and "Shell" usage statistics, they were filling the whole bar.
+
+### TODOs
+
+1. New tables adding consideration
+2. PostgreSQL documentation continuation
+3. Some basic queries thinking about
+4. Further cluster and port relationship discovery
+5. `postgresql.conf` `port` and `cluster_name` settings setting and unsetting no `-p` and `--cluster` `psql` invokation results matrix preparation
+
 ## 13 Nov, 2024 (summary)
 
 Yesterday was the last day of me SQL and PostgreSQL 30 day learning. I have planned to publish a summary today, and so am I doing.
