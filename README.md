@@ -1,6 +1,56 @@
 # SQL and PostgreSQL learning
 
-A blog documenting me learning of SQL and PostgreSQL
+A blog documenting my learning of SQL and PostgreSQL
+
+## 2024-11-18 (`postgresql.conf`, `port` and `cluster_name`)
+
+First, I think it shall be good enough for my learning to just continue TODOs. While continuing, I'll be adding new ones if necessary. As soon as I'll have all the TODOs completed, I shall think what next.
+
+Let me start with TODO 5. To remind, I was trying to correctly set the parameters `port` and `cluster_name` in `postgresql.conf`. Then I happened to notice that I had two files named `postgresql.conf` on my machine. One was from the previous PostgreSQL installation, version 12, and the other was from the current installation, version 17. I resolved to get to know how those two parameters and two files relate.
+
+I was interested in which parameter in which file makes PostgreSQL work, and which not. To test, I used the command `psql -U postgresql -c 'select version();'`. If this command had displayed the proper version of PostgreSQL, that is, 17, then I considered that the combination of parameters and files work. Otherwise I would not. The results are in the table below.
+
+|17                      |12                      |Result
+|-                       |-                       |-
+|None set                |None set                |Proper version
+|None set                |Only `port` set         |Proper version
+|None set                |Only `cluster_name` set |Proper version
+|None set                |Both set                |Proper version
+|Only `port` set         |None set                |Socket error
+|Only `port` set         |Only `port` set         |Cluster warning and socket error
+|Only `port` set         |Only `cluster_name` set |Socket error
+|Only `port` set         |Both set                |Cluster warning and socket error
+|Only `cluster_name` set |None set                |Proper version
+|Only `cluster_name` set |Only `port` set         |Proper version
+|Only `cluster_name` set |Only `cluster_name` set |Proper version
+|Only `cluster_name` set |Both set                |Proper version
+|Both set                |None set                |Socket error
+|Both set                |Only `port` set         |Cluster warning and socket error
+|Both set                |Only `cluster_name` set |Socket error
+|Both set                |Both set                |Cluster warning and socket error
+
+"Socket error" means
+
+```
+psql: error: connection to server on socket (...) failed: No such file or directory
+	Is the server running locally and accepting connections on that socket?
+```
+
+"Cluster warning" means
+
+```
+Warning: No existing cluster is suitable as a default target. Please see man pg_wrapper(1) how to specify one.
+```
+
+As you can see, there were 3 situations.
+
+The first was that "none set" and "only `cluster_name` set" for 17 resulted in "proper version", irrelevantly what was there for 12.
+
+The second was that "only `port` set" and "both set" for 17 resulted in "socket error" if there was either "none set" or "only `cluster_name` set" for 12.
+
+The third was that "only `port` set" and "both set" for 17 resulted in "cluster warning and socket error" if there was either "only `port` set" or "both set" for 12.
+
+I can understand none of the situations. I have already googled a bit, but found nothing useful. Either I searched unskillfully, or it's a rare behavior, or a thing so natural for PostgreSQL users that not worth to post too frequently about it. I'm considering asking about it on a forum or a mailing list.
 
 ## 14 Nov, 2024
 
