@@ -8,7 +8,7 @@ First, I think it shall be good enough for my learning to just continue TODOs. W
 
 Let me start with TODO 5. To remind, I was trying to correctly set the parameters `port` and `cluster_name` in `postgresql.conf`. Then I happened to notice that I had two files named `postgresql.conf` on my machine. One was from the previous PostgreSQL installation, version 12, and the other was from the current installation, version 17. I resolved to get to know how those two parameters and two files relate.
 
-I was interested in which parameter in which file makes PostgreSQL work, and which not. To test, I used the command `psql -U postgresql -c 'select version();'`. If this command would had displayed the proper version of PostgreSQL, that is, 17, then I would consider that the combination of parameters and files worked. Otherwise I would not. The results are in the table below.
+I was interested in which parameter in which file makes PostgreSQL work, and which not. To test, I used the command `psql -U postgresql -c 'select version();'`. If this command would display the proper version of PostgreSQL, that is, 17, then I would consider that the combination of parameters and files work. Otherwise I would not. The results are in the table below.
 
 |17                      |12                      |Result
 |-                       |-                       |-
