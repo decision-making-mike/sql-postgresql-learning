@@ -52,6 +52,14 @@ The third was that "only `port` set" and "both set" for 17 resulted in "cluster 
 
 I can understand none of the situations. I have already googled a bit, but found nothing useful. Either I searched unskillfully, or it's a rare behavior, or a thing so natural for PostgreSQL users that not worth to post too frequently about it. I'm considering asking about it on a forum or a mailing list.
 
+### TODOs
+
+1. New tables adding consideration
+2. PostgreSQL documentation continuation
+3. Some basic queries thinking about
+4. Further cluster and port relationship discovery
+5. `postgresql.conf` `port` and `cluster_name` behavior
+
 ## 14 Nov, 2024
 
 I have changed the theme of the blog.
