@@ -2,6 +2,10 @@
 
 A blog documenting my learning of SQL and PostgreSQL
 
+## 2024-11-19 (`postgresql.conf`, `port` and `cluster_name`)
+
+I've asked about the problem at https://dba.stackexchange.com/questions/343718/why-does-old-postgresql-conf-affects-new-postgresql-version.
+
 ## 2024-11-18 (`postgresql.conf`, `port` and `cluster_name`)
 
 First, I think it shall be good enough for my learning to just continue TODOs. While continuing, I'll be adding new ones if necessary. As soon as I'll have all the TODOs completed, I shall think what next.
