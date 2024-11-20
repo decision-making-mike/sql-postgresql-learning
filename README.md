@@ -2,9 +2,39 @@
 
 A blog documenting my learning of SQL and PostgreSQL
 
+## 2024-11-20. Database development
+
+I'm currently monitoring my question on `dba.stackexchange.com`. I have then some free time, and I would not waste it. Let's talk about other ways I can develop this project.
+
+In the TODOs I've mentioned two ways. First, adding new tables, and second, thinking about some basic queries. I've come to the conclusion that both are difficult without a business perspective.
+
+I mean, until recently I looked at the project as just a database, kind of naturally. After all, it is databases I want to learn here. Now, I think the project might benefit from looking at it as a business. It shan't hurt if I learn a bit of business on the fly.
+
+I'm a beginner in business. I thought it might be good enough to think of a company, any company, as the intersection of interests of its stakeholders. Such a model of business seems simple enough for me to comprehend, and in the same time promising enough to further the project. I've visualized how I think about it in the Venn diagram below.
+
+![a Venn diagram of a company as seen as the intersection of interests of its owners and shareholders, its employees, and its clients](./stakeholders.jpg)
+
+The presented groups of stakeholders are only exemplificatory. One could partition stakeholders differently.
+
+### TODOs
+
+1. New tables adding consideration
+2. PostgreSQL documentation continuation
+3. Some basic queries thinking about
+4. `postgresql.conf` `port` and `cluster_name` behavior
+5. Project business perspective development
+
 ## 2024-11-19 (`postgresql.conf`, `port` and `cluster_name`)
 
 I've asked about the problem at https://dba.stackexchange.com/questions/343718/why-does-old-postgresql-conf-affects-new-postgresql-version.
+
+### TODOs
+
+1. New tables adding consideration
+2. PostgreSQL documentation continuation
+3. Some basic queries thinking about
+4. Further cluster and port relationship discovery
+5. `postgresql.conf` `port` and `cluster_name` behavior
 
 ## 2024-11-18 (`postgresql.conf`, `port` and `cluster_name`)
 
