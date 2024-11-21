@@ -2,6 +2,12 @@
 
 A blog documenting my learning of SQL and PostgreSQL
 
+## 2024-11-21. Database development
+
+We're still solving the `postgresql.conf` problem on StackExchange. I've added multiple updates to the question.
+
+If you think you know the solution, I'll be glad to read your take on it. The URL is https://dba.stackexchange.com/questions/343718/why-does-old-postgresql-conf-affects-new-postgresql-version.
+
 ## 2024-11-20. Database development
 
 I'm currently monitoring my question on `dba.stackexchange.com`. I have then some free time, and I would not waste it. Let's talk about other ways I can develop this project.
