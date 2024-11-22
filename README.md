@@ -2,7 +2,27 @@
 
 A blog documenting my learning of SQL and PostgreSQL
 
-## 2024-11-21. Database development
+## 2024-11-22. Database development
+
+Let's get back to database development. I'd like not to get too tired and too disorganized thinking about one thing.
+
+Last time we said that a company is the intersection of interests of its stakeholders. As examples of stakeholders we have presented 3 stakeholder groups, one, owners and shareholders, two, clients, and three, employees.
+
+I think these example groups make a good base for the business view of the project. Now let's move to identifying their particular interests. This will allow us to see how "the company" being the intersection should look like, and how seeing it should advance the development of the project.
+
+Again, I'm a beginner in business, so I'm going to oversimplify, so that I won't get lost. I think it should be enough to distinguish one representative interest for one group. Owners and shareholders shall be interested in the company keeping to grow, clients in being given professional service, and employees in having a good job.
+
+I'd imagine these interests to translate somehow naturally to stakeholders' needs. Further, the needs should translate to what the company would like to know so that it can fulfill them. Finally, this desire to know should translate to what the company would include in its database.
+
+Asking questions could serve as a framework for the last two parts.
+
+So the interest in growth would mean the company asking itself, "how do we know we are profitable?" and possibly, "how to be profitable?".
+
+The interest in professional service would mean asking, "how do we know we deliver professional service?" and possibly, "how to deliver professional service?".
+
+The interest in good salary would mean asking "how do we know we are a good place to work?" and possibly, "how to be a good place to work?".
+
+## 2024-11-21. `postgresql.conf` problem
 
 We're still solving the `postgresql.conf` problem on StackExchange. I've added multiple updates to the question.
 
