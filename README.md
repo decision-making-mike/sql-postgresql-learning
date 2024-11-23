@@ -2,6 +2,10 @@
 
 A blog documenting my learning of SQL and PostgreSQL
 
+## 2024-11-23. Documentation
+
+Today I have read up to point "5.5.3. Unique Constraints" in the documentation.
+
 ## 2024-11-22. Database development
 
 Let's get back to database development. I'd like not to get too tired and too disorganized thinking about one thing.
