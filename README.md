@@ -2,6 +2,10 @@
 
 A blog documenting my learning of SQL and PostgreSQL
 
+## 2024-11-26. Documentation
+
+Today I have read up to point "5.8. Privileges" in the documentation.
+
 ## 2024-11-23. Documentation
 
 Today I have read up to point "5.5.3. Unique Constraints" in the documentation.
