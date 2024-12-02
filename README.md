@@ -2,6 +2,12 @@
 
 A blog documenting my learning of SQL and PostgreSQL
 
+## 2024-12-02. Documentation
+
+Today I have read up to point "5.11.1. Caveats" in the documentation.
+
+I have also started a PostgreSQL Q and A. Thereby I want to make my reading somewhat more enjoyable. You can see it in the file `postgresql-qanda.md`, at https://github.com/decision-making-mike/sql-postgresql-learning/blob/main/postgresql-qanda.md.
+
 ## 2024-11-27. Documentation
 
 Today I have read up to point "5.9. Row Security Policies" in the documentation.
