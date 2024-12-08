@@ -38,7 +38,7 @@ So the interest in growth would mean the company asking itself, "how do we know 
 
 The interest in professional service would mean asking, "how do we know we deliver professional service?" and possibly, "how to deliver professional service?".
 
-The interest in good salary would mean asking "how do we know we are a good place to work?" and possibly, "how to be a good place to work?".
+The interest in good ~~salary~~ job would mean asking "how do we know we are a good place to work?" and possibly, "how to be a good place to work?".
 
 ## 2024-11-21. `postgresql.conf` problem
 
