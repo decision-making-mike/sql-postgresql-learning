@@ -2,6 +2,59 @@
 
 A blog documenting my learning of SQL and PostgreSQL
 
+## TODOs
+
+|No.|TODO|Progress
+|-|-|-
+|1|Completion of The Guardian's article ["Bye bye Mongo, Hello Postgres"](https://www.theguardian.com/info/2018/nov/30/bye-bye-mongo-hello-postgres)|Read
+|2|Completion of Jeff Smith's article ["Composite Primary Keys"](https://weblogs.sqlteam.com/jeffs/2007/08/23/composite_primary_keys/)|Read
+|3|Completion of the Wikipedia article ["Cursor (databases)"](https://en.m.wikipedia.org/wiki/Cursor_(databases))|Completed
+|4|Completion of the Wikipedia article ["Hierarchical and recursive queries in SQL"](https://en.m.wikipedia.org/wiki/Hierarchical_and_recursive_queries_in_SQL)|Completed
+|5|Completion of the Wikipedia article ["NULL (SQL)"](https://en.m.wikipedia.org/wiki/Null_(SQL))|Completed
+|6|Completion of the Wikipedia article ["Superkey"](https://en.m.wikipedia.org/wiki/Superkey)|Completed
+|7|Completion of the Wikipedia article ["Surrogate key"](https://en.m.wikipedia.org/wiki/Surrogate_key)|Completed
+|8|Completion of Aaron Bertrand's article ["T-SQL Tuesday #168: Window functions"](https://sqlblog.org/2023/11/14/t-sql-tuesday-168-window-functions)|Completed
+|9|Finding the answer for the problem ["Why does old postgresql.conf affect new PostgreSQL version?"](https://dba.stackexchange.com/questions/343718/why-does-old-postgresql-conf-affect-new-postgresql-version)|Suspended
+|10|Completion of the preface and parts 1, 2 and 3 of the [PostgreSQL 17 documentation](https://www.postgresql.org/docs/17/index.html)|Read up to point "5.12. Table Partitioning"
+|11|Creating first queries to the database|Not started yet
+|12|Completion of the Wikipedia article ["SQL-92
+"](https://en.m.wikipedia.org/wiki/SQL-92)|Completed
+|13|Completion of Michael Gorman's article ["Is SQL a Real Standard Anymore?"](https://tdan.com/is-sql-a-real-standard-anymore/4923)|Completed
+
+## 2024-12-13. Blog changes. Database development
+
+First, a word about changes on the blog. As you can see, I've added a "TODOs" section at the top. I think it is self-explanatory. The TODOs I've already added I have completed in various moments in the past, from a couple of days ago to a month or two. I don't remember exactly.
+
+Why did I do this? I want to be more transparent about how I learn, should someone need to evaluate my skills. It also serves as a reminder for myself, like "I've done all that, I should know something".
+
+I considered placing this section in a separate file. That way the blog would be more readable. But then, I believe, I would be forgetting to update this section. Also, I would have one more thing to think of when Git-committing. There are benefits of having all the content in one file.
+
+Having said that, I'm still not sure whether maintaining the section won't be too much effort for me. We'll see.
+
+I plan to update the section in batches, that is, not on an ongoing basis.
+
+Now let's get back to database development. It won't forward itself!
+
+Last time we have come up with some questions that the company could ask itself to know what it can do to fulfill stakeholders' needs.
+
+Why do we need those questions? In update 2024-11-20 I mentioned about adding some basic queries. Also, I mentioned about thinking about queries earlier in TODOs. The answers to those questions shall facilitate writing queries.
+
+We provided 2 questions for each group of stakeholders, so 6 questions in total. The reader may observe that for each group of stakeholders, the first question involves knowing how to know, and the second how to do. Let's assume that by "how to do" we understand explicating what information we should change in the database. In an ideal case, we would also like to know by how much.
+
+So in this update I will start to answer the questions. For each question I'm going to provide a general, business answer. Then, in the coming update, or updates, I shall find out whether the business answers can be represented by information in the database model. If they can, I'll show how. Otherwise I'll show how the model should be changed so that they can.
+
+The first and second questions are about profitability. The first goes, how does the company know it is profitable? Let's assume that it is the case when its revenue is greater than its total expenses. We assume then that the revenue shall be represented by the sum of clients' payments, and that the total expenses shall be represented by the sum of fuel expenses.
+
+The second question goes, how is the company profitable? Let's assume that it can be profitable in two ways. First, by increasing revenue, and second, by reducing expenses. We assume then that revenue can be increased by increasing service price, and that expenses can be reduced by reducing fuel consumption. Reducing fuel consumption effectively means optimizing routes.
+
+The third and fourth questions are about professional service. The third goes, how does the company know it delivers professional service? Let's assume that it is the case when the average service rating provided by clients is 80% or higher. We assume that each client has an opportunity to rate the company after the service is done. For brevity let's leave out here the details of how they can do it, and how this "80%" is calculated from those ratings.
+
+The fourth question goes, how does the company deliver professional service? We can say that this is equivalent to asking how the company should deliver the services to customers so that they rate them as high as possible. Let's assume then that it can be done by reducing delivery time. Delivery time shall in turn depend on the length of the routes.
+
+Let's move on to the fifth and sixth questions, both about being a good place to work in. The fifth goes, how does the company know it is a good place to work in? Let's assume that it is the case when the average satisfaction rating provided by employees is 80% or higher. We assume that each employee has an opportunity to rate the company at the end of each month. For brevity let's leave out here the details of how they can do it, and how this "80%" is calculated from those ratings.
+
+Let's move on to the sixth question. It goes, how is the company a good place to work? We can say that this is equivalent to asking how the company should be so that the employees rate it as high as possible. Let's assume then that it can be done by increasing salary.
+
 ## 2024-12-02. Documentation
 
 Today I have read up to point "5.11.1. Caveats" in the documentation.
