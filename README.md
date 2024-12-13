@@ -6,8 +6,8 @@ A blog documenting my learning of SQL and PostgreSQL
 
 |No.|TODO|Progress
 |-|-|-
-|1|Completion of The Guardian's article ["Bye bye Mongo, Hello Postgres"](https://www.theguardian.com/info/2018/nov/30/bye-bye-mongo-hello-postgres)|Read
-|2|Completion of Jeff Smith's article ["Composite Primary Keys"](https://weblogs.sqlteam.com/jeffs/2007/08/23/composite_primary_keys/)|Read
+|1|Completion of The Guardian's article ["Bye bye Mongo, Hello Postgres"](https://www.theguardian.com/info/2018/nov/30/bye-bye-mongo-hello-postgres)|Completed
+|2|Completion of Jeff Smith's article ["Composite Primary Keys"](https://weblogs.sqlteam.com/jeffs/2007/08/23/composite_primary_keys/)|Completed
 |3|Completion of the Wikipedia article ["Cursor (databases)"](https://en.m.wikipedia.org/wiki/Cursor_(databases))|Completed
 |4|Completion of the Wikipedia article ["Hierarchical and recursive queries in SQL"](https://en.m.wikipedia.org/wiki/Hierarchical_and_recursive_queries_in_SQL)|Completed
 |5|Completion of the Wikipedia article ["NULL (SQL)"](https://en.m.wikipedia.org/wiki/Null_(SQL))|Completed
