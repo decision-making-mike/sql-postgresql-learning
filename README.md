@@ -17,8 +17,7 @@ A blog documenting my learning of SQL and PostgreSQL
 |9|Finding the answer for the problem ["Why does old postgresql.conf affect new PostgreSQL version?"](https://dba.stackexchange.com/questions/343718/why-does-old-postgresql-conf-affect-new-postgresql-version)|Suspended
 |10|Completion of the preface and parts 1, 2 and 3 of the [PostgreSQL 17 documentation](https://www.postgresql.org/docs/17/index.html)|Read up to point "5.12. Table Partitioning"
 |11|Creating first queries to the database|Not started yet
-|12|Completion of the Wikipedia article ["SQL-92
-"](https://en.m.wikipedia.org/wiki/SQL-92)|Completed
+|12|Completion of the Wikipedia article ["SQL-92"](https://en.m.wikipedia.org/wiki/SQL-92)|Completed
 |13|Completion of Michael Gorman's article ["Is SQL a Real Standard Anymore?"](https://tdan.com/is-sql-a-real-standard-anymore/4923)|Completed
 
 ## 2024-12-13. Blog changes. Database development
