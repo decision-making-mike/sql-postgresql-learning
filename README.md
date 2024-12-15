@@ -4,7 +4,7 @@ A blog documenting my learning of SQL and PostgreSQL
 
 ## TODOs
 
-|Status|TODO
+|Status (done, ongoing, to do)|TODO
 |-|-
 |Done|Completion of Aaron Bertrand's article ["T-SQL Tuesday #168: Window functions"](https://sqlblog.org/2023/11/14/t-sql-tuesday-168-window-functions)
 |Done|Completion of Jeff Smith's article ["Composite Primary Keys"](https://weblogs.sqlteam.com/jeffs/2007/08/23/composite_primary_keys/)
