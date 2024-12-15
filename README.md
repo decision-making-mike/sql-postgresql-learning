@@ -4,21 +4,21 @@ A blog documenting my learning of SQL and PostgreSQL
 
 ## TODOs
 
-|No.|TODO|Progress
-|-|-|-
-|1|Completion of The Guardian's article ["Bye bye Mongo, Hello Postgres"](https://www.theguardian.com/info/2018/nov/30/bye-bye-mongo-hello-postgres)|Completed
-|2|Completion of Jeff Smith's article ["Composite Primary Keys"](https://weblogs.sqlteam.com/jeffs/2007/08/23/composite_primary_keys/)|Completed
-|3|Completion of the Wikipedia article ["Cursor (databases)"](https://en.m.wikipedia.org/wiki/Cursor_(databases))|Completed
-|4|Completion of the Wikipedia article ["Hierarchical and recursive queries in SQL"](https://en.m.wikipedia.org/wiki/Hierarchical_and_recursive_queries_in_SQL)|Completed
-|5|Completion of the Wikipedia article ["NULL (SQL)"](https://en.m.wikipedia.org/wiki/Null_(SQL))|Completed
-|6|Completion of the Wikipedia article ["Superkey"](https://en.m.wikipedia.org/wiki/Superkey)|Completed
-|7|Completion of the Wikipedia article ["Surrogate key"](https://en.m.wikipedia.org/wiki/Surrogate_key)|Completed
-|8|Completion of Aaron Bertrand's article ["T-SQL Tuesday #168: Window functions"](https://sqlblog.org/2023/11/14/t-sql-tuesday-168-window-functions)|Completed
-|9|Finding the answer for the problem ["Why does old postgresql.conf affect new PostgreSQL version?"](https://dba.stackexchange.com/questions/343718/why-does-old-postgresql-conf-affect-new-postgresql-version)|Suspended
-|10|Completion of the preface and parts 1, 2 and 3 of the [PostgreSQL 17 documentation](https://www.postgresql.org/docs/17/index.html)|Read up to point "5.12. Table Partitioning"
-|11|Creating first queries to the database|Not started yet
-|12|Completion of the Wikipedia article ["SQL-92"](https://en.m.wikipedia.org/wiki/SQL-92)|Completed
-|13|Completion of Michael Gorman's article ["Is SQL a Real Standard Anymore?"](https://tdan.com/is-sql-a-real-standard-anymore/4923)|Completed
+|Status|TODO
+|-|-
+|Done|Completion of Aaron Bertrand's article ["T-SQL Tuesday #168: Window functions"](https://sqlblog.org/2023/11/14/t-sql-tuesday-168-window-functions)
+|Done|Completion of Jeff Smith's article ["Composite Primary Keys"](https://weblogs.sqlteam.com/jeffs/2007/08/23/composite_primary_keys/)
+|Done|Completion of Michael Gorman's article ["Is SQL a Real Standard Anymore?"](https://tdan.com/is-sql-a-real-standard-anymore/4923)
+|Done|Completion of The Guardian's article ["Bye bye Mongo, Hello Postgres"](https://www.theguardian.com/info/2018/nov/30/bye-bye-mongo-hello-postgres)
+|Done|Completion of the Wikipedia article ["Cursor (databases)"](https://en.m.wikipedia.org/wiki/Cursor_(databases))
+|Done|Completion of the Wikipedia article ["Hierarchical and recursive queries in SQL"](https://en.m.wikipedia.org/wiki/Hierarchical_and_recursive_queries_in_SQL)
+|Done|Completion of the Wikipedia article ["NULL (SQL)"](https://en.m.wikipedia.org/wiki/Null_(SQL))
+|Done|Completion of the Wikipedia article ["SQL-92"](https://en.m.wikipedia.org/wiki/SQL-92)
+|Done|Completion of the Wikipedia article ["Superkey"](https://en.m.wikipedia.org/wiki/Superkey)
+|Done|Completion of the Wikipedia article ["Surrogate key"](https://en.m.wikipedia.org/wiki/Surrogate_key)
+|Ongoing|Completion of the preface and parts 1, 2 and 3 of the [PostgreSQL 17 documentation](https://www.postgresql.org/docs/17/index.html)
+|Ongoing|Finding the answer for the problem ["Why does old postgresql.conf affect new PostgreSQL version?"](https://dba.stackexchange.com/questions/343718/why-does-old-postgresql-conf-affect-new-postgresql-version)
+|To do|Creating first queries to the database
 
 ## 2024-12-13. Blog changes. Database development
 
