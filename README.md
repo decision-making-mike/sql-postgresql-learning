@@ -7,12 +7,14 @@ A blog documenting my learning of SQL and PostgreSQL
 |Status (done, ongoing, to do)|TODO
 |-|-
 |Done|Completion of Aaron Bertrand's article ["T-SQL Tuesday #168: Window functions"](https://sqlblog.org/2023/11/14/t-sql-tuesday-168-window-functions)
+|Done|Completion of Charlie Custer's article ["Upsert in SQL: What is an upsert, and when should you use one?"](https://www.cockroachlabs.com/blog/sql-upsert/)
 |Done|Completion of Jeff Smith's article ["Composite Primary Keys"](https://weblogs.sqlteam.com/jeffs/2007/08/23/composite_primary_keys/)
 |Done|Completion of Michael Gorman's article ["Is SQL a Real Standard Anymore?"](https://tdan.com/is-sql-a-real-standard-anymore/4923)
 |Done|Completion of The Guardian's article ["Bye bye Mongo, Hello Postgres"](https://www.theguardian.com/info/2018/nov/30/bye-bye-mongo-hello-postgres)
 |Done|Completion of the Wikipedia article ["Cursor (databases)"](https://en.m.wikipedia.org/wiki/Cursor_(databases))
 |Done|Completion of the Wikipedia article ["Hierarchical and recursive queries in SQL"](https://en.m.wikipedia.org/wiki/Hierarchical_and_recursive_queries_in_SQL)
 |Done|Completion of the Wikipedia article ["NULL (SQL)"](https://en.m.wikipedia.org/wiki/Null_(SQL))
+|Done|Completion of the Wikipedia article ["SQL"](https://en.m.wikipedia.org/wiki/SQL)
 |Done|Completion of the Wikipedia article ["SQL-92"](https://en.m.wikipedia.org/wiki/SQL-92)
 |Done|Completion of the Wikipedia article ["Superkey"](https://en.m.wikipedia.org/wiki/Superkey)
 |Done|Completion of the Wikipedia article ["Surrogate key"](https://en.m.wikipedia.org/wiki/Surrogate_key)
