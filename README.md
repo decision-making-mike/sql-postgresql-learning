@@ -21,6 +21,7 @@ A blog documenting my learning of SQL and PostgreSQL
 |Ongoing|Completion of the preface and parts 1, 2 and 3 of the [PostgreSQL 17 documentation](https://www.postgresql.org/docs/17/index.html)
 |Ongoing|Finding the answer for the problem ["Why does old postgresql.conf affect new PostgreSQL version?"](https://dba.stackexchange.com/questions/343718/why-does-old-postgresql-conf-affect-new-postgresql-version)
 |To do|Creating first queries to the database
+|To do|Finding out whether the business answers can be represented by information in the database model
 
 ## 2024-12-13. Blog changes. Database development
 
