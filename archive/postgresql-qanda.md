@@ -112,4 +112,10 @@ Yes.
 
 ### 5.11.1. Caveats
 
+Can all SQL commands work on inheritance hierarchies?
+
+No.
+
+---
+
 TODO
