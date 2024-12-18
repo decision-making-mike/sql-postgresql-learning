@@ -1,0 +1,15 @@
+https://sqlblog.org/2023/11/14/t-sql-tuesday-168-window-functions
+https://www.cockroachlabs.com/blog/sql-upsert/
+https://weblogs.sqlteam.com/jeffs/2007/08/23/composite_primary_keys/
+https://www.theregister.com/2024/05/31/fifty_years_of_sql/
+https://www.theregister.com/2024/05/10/sql_cocreator_nosql/
+https://tdan.com/is-sql-a-real-standard-anymore/4923
+https://www.theguardian.com/info/2018/nov/30/bye-bye-mongo-hello-postgres
+https://news.ycombinator.com/item?id=40809997
+https://en.m.wikipedia.org/wiki/Cursor_(databases)
+https://en.m.wikipedia.org/wiki/Hierarchical_and_recursive_queries_in_SQL
+https://en.m.wikipedia.org/wiki/Null_(SQL)
+https://en.m.wikipedia.org/wiki/SQL
+https://en.m.wikipedia.org/wiki/SQL-92
+https://en.m.wikipedia.org/wiki/Superkey
+https://en.m.wikipedia.org/wiki/Surrogate_key

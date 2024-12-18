@@ -2,26 +2,47 @@
 
 A blog documenting my learning of SQL and PostgreSQL
 
-## TODOs
+[completed-todos.txt](completed-todos.txt)
+[todos.txt](todos.txt)
+[completed-reads.txt](completed-reads.txt)
 
-|Status (done, ongoing, to do)|TODO
-|-|-
-|Done|Completion of Aaron Bertrand's article ["T-SQL Tuesday #168: Window functions"](https://sqlblog.org/2023/11/14/t-sql-tuesday-168-window-functions)
-|Done|Completion of Charlie Custer's article ["Upsert in SQL: What is an upsert, and when should you use one?"](https://www.cockroachlabs.com/blog/sql-upsert/)
-|Done|Completion of Jeff Smith's article ["Composite Primary Keys"](https://weblogs.sqlteam.com/jeffs/2007/08/23/composite_primary_keys/)
-|Done|Completion of Michael Gorman's article ["Is SQL a Real Standard Anymore?"](https://tdan.com/is-sql-a-real-standard-anymore/4923)
-|Done|Completion of The Guardian's article ["Bye bye Mongo, Hello Postgres"](https://www.theguardian.com/info/2018/nov/30/bye-bye-mongo-hello-postgres)
-|Done|Completion of the Wikipedia article ["Cursor (databases)"](https://en.m.wikipedia.org/wiki/Cursor_(databases))
-|Done|Completion of the Wikipedia article ["Hierarchical and recursive queries in SQL"](https://en.m.wikipedia.org/wiki/Hierarchical_and_recursive_queries_in_SQL)
-|Done|Completion of the Wikipedia article ["NULL (SQL)"](https://en.m.wikipedia.org/wiki/Null_(SQL))
-|Done|Completion of the Wikipedia article ["SQL"](https://en.m.wikipedia.org/wiki/SQL)
-|Done|Completion of the Wikipedia article ["SQL-92"](https://en.m.wikipedia.org/wiki/SQL-92)
-|Done|Completion of the Wikipedia article ["Superkey"](https://en.m.wikipedia.org/wiki/Superkey)
-|Done|Completion of the Wikipedia article ["Surrogate key"](https://en.m.wikipedia.org/wiki/Surrogate_key)
-|Ongoing|Completion of the preface and parts 1, 2 and 3 of the [PostgreSQL 17 documentation](https://www.postgresql.org/docs/17/index.html)
-|Ongoing|Finding the answer for the problem ["Why does old postgresql.conf affect new PostgreSQL version?"](https://dba.stackexchange.com/questions/343718/why-does-old-postgresql-conf-affect-new-postgresql-version)
-|To do|Creating first queries to the database
-|To do|Finding out whether the business answers can be represented by information in the database model
+## Update 38. Database development
+
+In the second last update I've provided business answers for the questions the company could ask iself to know what it can do to fulfill stakeholders' needs. In this update I'm going to start finding out how those answers can be represented by information in the database model.
+
+The answer for the first question needs the sum of clients' payments and the sum of fuel expenses.
+
+The sum of clients' payments needs particular clients' payments. These we can find in the model. They are in the `required_payments` table, in the `amount` column.
+
+The sum of fuel expenses needs particular fuel expenses. These we can not find in the model as it lacks information about expenses whatsoever. We need to add it.
+
+The answer for the second question needs the service price and the information on how routes can be optimized.
+
+As for the service price, we can not find it in the model. We need to add it.
+
+As for optimization of routes, it seems to be a huge task on its own. We would rather not dig into the details, for we want to write at least one query for the whole six questions, and not get lost in the details of only one of them. We will then just assume that we're going to be fine with knowing what addresses particular cars visit. We can find this information in the model. It is in the `shipments` and `deliveries` tables, in the `address_id` columns.
+
+The answer for the third question needs the average service rating provided by clients. It in turn needs particular service ratings. These we can not find in the model. We need to add them.
+
+The answer for the fourth question needs the lengths of routes. For simplicity we shall assume that the length of a route equals the number of deliveries between the place of origin and the place of destination. We assume the last delivery is included. We can find particular deliveries looking at the `deliveries` table.
+
+The answer for the fifth question needs, as we've worded it in the last update, the "average satisfaction rating provided by employees". I now think we should change the name. From now on let's call this rating the "employment rating", so that it refer to "employment" just like the "service rating" refers to "service".
+
+So, the rating in turn needs particular employment ratings. These we can not find in the model. We need to add them.
+
+The answer for the sixth question needs salary. The model doesn't have information about salary, as it doesn't store information about employees whatsoever. We need to add it.
+
+## Update 37. Blog changes. Documentation
+
+In this update I'm changing two things. One, the pattern I use to name updates, and two, the place of storing TODOs.
+
+As for the name pattern, from now on it will be `Update <update number>` instead of `Update <update date>`. `<update number>` is the number of updates from the beginning of this blog up to and including the current update. This change shall let me make updates several times a day, that is, more flexibly. Not that I predict to do it very often, it's only good to have such an option.
+
+As for TODOs, I moved them to three separate files. The file [todos.txt](todos.txt) holds TODOs I'm doing, the file [completed-todos.txt](completed-todos.txt) holds TODOs I have done, and the file [completed-reads.txt](completed-reads.txt) holds completed reads, that is, articles, books, et cetera. I prefer the name "completed TODOs" to "done TODOs" for it to be symmetrical to "completed reads". The files are all in plain text, that is, no Markdown and similar formats there. I believe this will make both editing and using them more intuivite. In place of the TODOs section I have placed links to the files.
+
+I hope this file reorganization to serve two purposes, and I expect it to have two incidental effects. Purpose one, it shall better organize information in the repository. I shan't get lost someday when the repository will have grown. Purpose two, it shall make management of TODOs easier. Incidental effect one, it makes the blog easier to approach for the reader. Until now, the reader had to scroll through all the TODOs to reach the beginning of the main content. Incidental effect two, it separates "real TODOs" from reads. They both are essentially kinds of "things to do" before they are completed, but after that they diverge.
+
+As for reading the documentation, I have read up to point "5.15. Dependency Tracking".
 
 ## 2024-12-13. Blog changes. Database development
 
