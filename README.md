@@ -6,6 +6,10 @@ A blog documenting my learning of SQL and PostgreSQL
 [todos.txt](todos.txt)
 [completed-reads.txt](completed-reads.txt)
 
+## Update 39. Documentation
+
+I have read up to point "7.2. Table Expressions" in the documentation.
+
 ## Update 38. Database development
 
 In the second last update I've provided business answers for the questions the company could ask iself to know what it can do to fulfill stakeholders' needs. In this update I'm going to start finding out how those answers can be represented by information in the database model.
