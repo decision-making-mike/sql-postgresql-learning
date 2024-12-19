@@ -3,7 +3,9 @@
 A blog documenting my learning of SQL and PostgreSQL
 
 [completed-todos.txt](completed-todos.txt)
+
 [todos.txt](todos.txt)
+
 [completed-reads.txt](completed-reads.txt)
 
 ## Update 39. Documentation
