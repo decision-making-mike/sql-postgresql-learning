@@ -10,6 +10,10 @@ A blog documenting my learning of SQL and PostgreSQL
 
 [completed-reads.txt](completed-reads.txt)
 
+## Update 41. Documentation
+
+I have read up to point "7.2.1.4. Table Functions" in the documentation.
+
 ## Update 40. Repository changes
 
 I'm changing the files with TODOs and reads. First, I've changed the name of the file `todos.txt` to `ongoing-todos.txt`. Second, I've created a file `ongoing-reads.txt`. Third, I've moved the "PostgreSQL 17 documentation" item from the file `ongoing-todos.txt` to the file `ongoing-reads.txt`, and improved it a little bit. Fourth, I reordered the link to the files at the top of this blog. The names of the files with ongoing TODOs and ongoing reads, that is, `ongoing-todos.txt` and `ongoing-reads.txt`, shall clearly indicate the files have an opposite function to the files `completed-todos.txt` and `completed-reads.txt`.
