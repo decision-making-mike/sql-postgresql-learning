@@ -13,3 +13,6 @@ https://en.m.wikipedia.org/wiki/SQL
 https://en.m.wikipedia.org/wiki/SQL-92
 https://en.m.wikipedia.org/wiki/Superkey
 https://en.m.wikipedia.org/wiki/Surrogate_key
+https://cs.stackexchange.com/questions/99350/did-date-and-darwens-third-manifesto-have-a-lasting-impact
+https://xkcd.com/327/
+https://dl.acm.org/doi/abs/10.1145/202660.202667
