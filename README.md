@@ -10,6 +10,10 @@ A blog documenting my learning of SQL and PostgreSQL
 
 [completed-reads.txt](completed-reads.txt)
 
+## Update 42. Documentation
+
+I have read up to point "7.2.4. GROUPING SETS, CUBE, and ROLLUP" in the documentation.
+
 ## Update 41. Documentation
 
 I have read up to point "7.2.1.4. Table Functions" in the documentation.
