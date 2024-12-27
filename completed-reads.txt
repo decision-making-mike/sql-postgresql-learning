@@ -16,3 +16,6 @@ https://en.m.wikipedia.org/wiki/Surrogate_key
 https://cs.stackexchange.com/questions/99350/did-date-and-darwens-third-manifesto-have-a-lasting-impact
 https://xkcd.com/327/
 https://dl.acm.org/doi/abs/10.1145/202660.202667
+https://www.researchgate.net/publication/297675657_Accounting_Database_Design_and_SQL_Implementation
+https://deavid.wordpress.com/2018/08/31/things-i-miss-from-postgresql/
+https://www.codeproject.com/Articles/5161230/Database-for-Financial-Accounting-Application-I-Ba
