@@ -191,3 +191,57 @@ create table made_payments (
     -- The date of the payment.
     date date not null
 );
+
+-- This table stores information about fuel expenses.
+create table fuel_expenses (
+    -- The ID of the expense.
+    id integer primary key generated always as identity,
+    -- The amount of money spent.
+    amount integer not null
+);
+
+-- This table stores information about parameters. They
+--  can be any parameters related to the company.
+create table parameters (
+    -- The ID of the parameter.
+    id integer primary key generated always as identity,
+    -- The type is "varchar(100)" just for not having
+    --  to define a check constraint with "text" or
+    --  "varchar". I do not understand check
+    --  constraints yet. The length "100" is a
+    --  more or less arbitrary value, but which
+    --  seems to me to be short enough and long
+    --  enough for my needs during my learning of SQL
+    --  and PostgreSQL.
+    name varchar(100),
+    -- The type is "varchar(100)" just for not having
+    --  to define a check constraint with "text" or
+    --  "varchar". I do not understand check
+    --  constraints yet. The length "100" is a
+    --  more or less arbitrary value, but which
+    --  seems to me to be short enough and long
+    --  enough for my needs during my learning of SQL
+    --  and PostgreSQL.
+    value varchar(100)
+);
+
+create table service_ratings (
+    -- The ID of the rating.
+    id integer primary key generated always as identity,
+    -- The value of the rating.
+    value integer not null
+);
+
+create table employment_ratings (
+    -- The ID of the rating.
+    id integer primary key generated always as identity,
+    -- The value of the rating.
+    value integer not null
+);
+
+create table salaries (
+    -- The ID of the salary.
+    id integer primary key generated always as identity,
+    -- The amount of money constituting the salary.
+    amount integer not null
+);

@@ -10,6 +10,26 @@ A blog documenting my learning of SQL and PostgreSQL
 
 [completed-reads.txt](completed-reads.txt)
 
+## Update 43. Database development. Documentation reading
+
+In this update I'm updating the model with information described in update 38.
+
+First, I've facilitated adding information about fuel expenses. I've added a table `fuel_expenses`. Although in update 38 I talked about adding information about expenses in general, not only about fuel expenses, I then thought that it would be overengineering.
+
+Second, I've facilitated adding information about service price. I've added a table `parameters`.
+
+Third, I've facilitated adding information about service ratings. I've added a table `service_ratings`.
+
+Fourth, I've facilitated adding information about employment ratings. I've added a table `employment_ratings`.
+
+Fifth, I've facilitated adding information about salary. I've added a table `salaries`.
+
+For all the aforementioned tables I've created sample data, and successfully inserted them.
+
+As for the PostgreSQL's documentation, I have read up to point "8.6. Boolean Type".
+
+In the next update I am going to finally prepare queries that shall answer questions from update "2024-11-22. Database development". Should the queries require changing the model further, I'll do it.
+
 ## Update 42. Documentation
 
 I have read up to point "7.2.4. GROUPING SETS, CUBE, and ROLLUP" in the documentation.

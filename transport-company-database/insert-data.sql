@@ -185,3 +185,60 @@ values
     (4, '2024-04-05'),
     (5, '2024-05-05')
 ;
+
+insert into fuel_expenses (
+    amount
+)
+values
+    (50),
+    (51),
+    (52),
+    (53),
+    (54)
+;
+
+insert into parameters (
+    name,
+    value
+)
+values
+    ('service price', '100')
+;
+
+insert into service_ratings (
+    value
+)
+values
+    (1),
+    (2),
+    (3),
+    (4),
+    (5)
+;
+
+insert into employment_ratings (
+    value
+)
+values
+    (6),
+    (7),
+    (8),
+    (9),
+    (10)
+;
+
+insert into salaries (
+    amount
+)
+values
+    (1000),
+    (1000),
+    (1000),
+    (2000),
+    (2000),
+    (2000),
+    (3000),
+    (3000),
+    (3000),
+    (4000)
+;
