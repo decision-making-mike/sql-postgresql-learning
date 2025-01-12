@@ -1,6 +1,6 @@
 # SQL and PostgreSQL learning
 
-A blog documenting my learning of SQL and PostgreSQL
+A blog and a repository documenting my learning of SQL, PostgreSQL, and databases in general
 
 [ongoing-todos.txt](ongoing-todos.txt)
 
@@ -9,6 +9,10 @@ A blog documenting my learning of SQL and PostgreSQL
 [completed-todos.txt](completed-todos.txt)
 
 [completed-reads.txt](completed-reads.txt)
+
+## Update 44. Documentation reading
+
+As for the PostgreSQL's documentation, I have read up to point "8.10. Bit String Types".
 
 ## Update 43. Database development. Documentation reading
 
