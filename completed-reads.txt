@@ -24,3 +24,10 @@ https://stackoverflow.com/questions/596706/best-practices-for-storing-bank-infor
 https://www.reddit.com/r/learnprogramming/comments/mh8p19/which_database_should_i_use_to_store_about_200gb/
 https://stackoverflow.com/questions/3957491/whats-the-best-db-to-store-banking-transactions
 https://stackoverflow.com/questions/1018822/inner-join-on-vs-where-clause
+https://dba.stackexchange.com/questions/294456/should-stored-financial-transactions-include-some-data-redundancy
+https://stackoverflow.com/questions/15726535/which-datatype-should-be-used-for-currency
+https://dba.stackexchange.com/questions/161119/first-normal-form-definitive-definition
+https://vertabelo.com/blog/the-9-most-common-database-design-errors/
+https://se-radio.net/2009/06/episode-137-sql-with-jim-melton/
+https://www.youtube.com/watch?v=qI_g07C_Q5I
+https://en.m.wikipedia.org/wiki/Insert_(SQL)
