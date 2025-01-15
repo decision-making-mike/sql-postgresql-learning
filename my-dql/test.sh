@@ -4,7 +4,7 @@
 
 # TODO Automatic test case generation reading
 
-script_path='./transpile-my-dql.sh'
+script_path='./transpile.sh'
 debugging_enabled="$1"
 if [[ -z "$debugging_enabled" ]]
 then
