@@ -10,6 +10,22 @@ A blog and a repository documenting my learning of SQL, PostgreSQL, and database
 
 [completed-reads.txt](completed-reads.txt)
 
+## Update 45. Database development plans
+
+Two updates earlier I've planned to continue development of the database model. Namely, I've planned to create queries that would answer the questions from update "2024-11-22". I have said I would do it in the previous update. But I forgot.
+
+So, I wanted to do it in this update. But during the prepraration of the queries I thought I might want to postpone it even further. Why? I think I might benefit from adding more data to the database. It should make it easier for me to debug the queries.
+
+So, I'm now planning to first prepare the data, and only thereafter to prepare the queries.
+
+Now, the fact is, current database model is anything but a professional one. I think making it a little more professional should let me gain credibility in the eyes of recruiters. Also, I might learn more.
+
+Therefore, I'll be now assessing how much professionalism can it gain by having added more data. For example, should I aim for 1 million rows in the `shipments` table?
+
+Also, maybe adding more meaningful data could make a difference. Or, to put it differently, adding data in a more meaningful way. The data for the `insert`s that are now in the repository were prepared a little randomly. I could instead design a set of processes, each coherent and for adding a single piece of data. For example, one process would represent clients making orders. This would result in adding rows to tables `orders`, `parcels`, and so on. Another process could represent purchase of vehicles by the company. This would result in adding rows to table `vehicles`.
+
+The process of adding data eventually might become complex enough to be worth a look on its own. Maybe then it too could support my employment and learning. I don't know if I should aim for making use of SQL here, given my lack of experience with this language. Of course I want to learn it! But should it take another month to write the code for adding the data?Most probably I have not enough motivation for such a long work, without a graspable result in between. In this regard Bash seems to be a more justified choice.
+
 ## Update 44. Documentation reading
 
 As for the PostgreSQL's documentation, I have read up to point "8.10. Bit String Types".
