@@ -10,6 +10,26 @@ A blog and a repository documenting my learning of SQL, PostgreSQL, and database
 
 [completed-reads.txt](completed-reads.txt)
 
+## Update 46. Database development
+
+In the previous update I've mentioned adding data to the database, and that this process might become complex. When I think about it now, this statement is even being strengthened by the observation that the only way for it come up to my expectations is to be based on a new business model of the company.
+
+For the record, we already have two business models.
+
+One, the older, is represented by the `create table` statements. It‘s concise, easily understandable, and coherent.
+
+The other, the newer, is represented by my questions and considerations, beginning as early as update “2024-11-20”. In that update, I have very shallowly summarized this newer model with the statement that a business is an “intersection of interests of its stakeholders”. Comparing to the older model, this model is verbose, difficult to understand, and it’s quite hard to verify its coherence. I’ve created it to enhance the older model, what means merging them utimately.
+
+I’m going to create a new model for adding the data because we shan’t use any of those two. The shortcomings of the newer model are listed above. The shortcoming of the older model is that it shares its representation with the database model. Looking at the `create table` statements, I couldn’t easily find that “more meaningful way” of adding the data that I mentioned in the previous update.
+
+The new model needs to have a representation. A while ago I in fact thought about two representations. One would describe the structure of the business, the other the processes of it. But now, after looking closer at the issue for a while, I’m not so sure whether it wouldn’t be enough to model only processes. Anyway, the term “processes” may seem to need some clarification, and so I will clarify it in the model.
+
+It’s important to note that creating a new representation constitutes further departure from the idea of a single source of truth in the whole project of creating the database. We now have two business models and a database model. The models are to be merged ultimately, as mentioned above. So, we can say that if we won’t create any additional model, we’re going to have two sources of truth, and if we will, we’re going to have three. This complicates the development. I will need to agree them with each other.
+
+For the model I aim for reusing both current business models, and the database model. I want them all to be coherent as much as possible. There shall of course be a little incoherence, and so I am planning beforehand that, in proportion to the incoherence, I will change the database model based on the new business model. I won’t do this the other way around because it is more intuitive for me when a database model is based on a business model.
+
+As for the PostgreSQL's documentation, I have read up to point "8.15.3. Accessing Arrays".
+
 ## Update 45. Database development plans
 
 Two updates earlier I've planned to continue development of the database model. Namely, I've planned to create queries that would answer the questions from update "2024-11-22". I have said I would do it in the previous update. But I forgot.
