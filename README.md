@@ -1,6 +1,6 @@
 # SQL and PostgreSQL learning
 
-A blog and a repository documenting my learning of SQL, PostgreSQL, and databases in general
+A blog and a repository documenting my learning of SQL, PostgreSQL, and databases in general.
 
 [ongoing-todos.txt](ongoing-todos.txt)
 
