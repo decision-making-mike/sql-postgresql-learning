@@ -10,6 +10,10 @@ A blog and a repository documenting my learning of SQL, PostgreSQL, and database
 
 [completed-reads.txt](completed-reads.txt)
 
+## Update 48. Documentation reading
+
+I have read up to point "9.7.2. `SIMILAR TO` Regular Expressions" in the PostgreSQL's documentation.
+
 ## Update 47. Documentation reading
 
 I have read up to point "9.4. String Functions and Operators" in the PostgreSQL's documentation.
