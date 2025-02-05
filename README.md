@@ -10,6 +10,10 @@ A blog and a repository documenting my learning of SQL, PostgreSQL, and database
 
 [completed-reads.txt](completed-reads.txt)
 
+## Update 47. Documentation reading
+
+I have read up to point "9.4. String Functions and Operators" in the PostgreSQL's documentation.
+
 ## Update 46. Database development
 
 In the previous update I've mentioned adding data to the database, and that this process might become complex. When I think about it now, this statement is even being strengthened by the observation that the only way for it come up to my expectations is to be based on a new business model of the company.
@@ -150,7 +154,7 @@ The first and second questions are about profitability. The first goes, how does
 
 The second question goes, how is the company profitable? Let's assume that it can be profitable in two ways. First, by increasing revenue, and second, by reducing expenses. We assume then that revenue can be increased by increasing service price, and that expenses can be reduced by reducing fuel consumption. Reducing fuel consumption effectively means optimizing routes.
 
-The third and fourth questions are about professional service. The third goes, how does the company know it delivers professional service? Let's assume that it is the case when the average service rating provided by clients is 80% or higher. We assume that each client has an opportunity to rate the company after the service is done. For brevity let's leave out here the details of how they can do it, and how this "80%" is calculated from those ratings.
+The third and fourth questions are about professional service. The third goes, how does the company know it delivers professional service? Let's assume that it is the case when the average service rating provided by clients is 80% or higher. We assume that each client has an opportunity to rate the company after the service is done. For brevity let's leave out here the details of how they can do it, and how this "80%" is calculated from those ratings.
 
 The fourth question goes, how does the company deliver professional service? We can say that this is equivalent to asking how the company should deliver the services to customers so that they rate them as high as possible. Let's assume then that it can be done by reducing delivery time. Delivery time shall in turn depend on the length of the routes.
 
