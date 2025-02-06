@@ -1,1 +1,2 @@
 PostgreSQL 17 documentation, https://www.postgresql.org/docs/17/index.html, the preface and parts 1, 2, and 3
+https://en.m.wikipedia.org/wiki/Business_process_modeling
