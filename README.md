@@ -10,6 +10,12 @@ A blog and a repository documenting my learning of SQL, PostgreSQL, and database
 
 [completed-reads.txt](completed-reads.txt)
 
+## Update 49. Documentation reading. Reading about business process modelling
+
+I have read up to point "9.9. Date/Time Functions and Operators" in the PostgreSQL's documentation.
+
+I have read up to point "To be modeling" in  https://en.m.wikipedia.org/wiki/Business_process_modeling.
+
 ## Update 48. Documentation reading
 
 I have read up to point "9.7.2. `SIMILAR TO` Regular Expressions" in the PostgreSQL's documentation.
