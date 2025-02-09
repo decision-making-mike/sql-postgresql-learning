@@ -42,3 +42,5 @@ https://stackoverflow.com/questions/163434/are-nulls-in-a-relational-database-ok
 https://stackoverflow.com/questions/20481363/relational-algebra-expression-for-is-null
 https://l_avrot.gitlab.io/slides/null_20220525.html#/
 Hugh Darwen, "How To Handle Missing Information Without Using NULL", 2003, https://www.dcs.warwick.ac.uk/%7Ehugh/TTM/Missing-info-without-nulls.pdf
+https://www.red-gate.com/simple-talk/databases/sql-server/learn/sql-and-the-snare-of-three-valued-logic/
+https://en.m.wikipedia.org/wiki/Object%E2%80%93relational_impedance_mismatch
