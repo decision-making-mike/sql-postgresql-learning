@@ -246,7 +246,7 @@ I mean, until recently I looked at the project as just a database, kind of natur
 
 I'm a beginner in business. I thought it might be good enough to think of a company, any company, as the intersection of interests of its stakeholders. Such a model of business seems simple enough for me to comprehend, and in the same time promising enough to further the project. I've visualized how I think about it in the Venn diagram below.
 
-![a Venn diagram of a company as seen as the intersection of interests of its owners and shareholders, its employees, and its clients](./stakeholders.jpg)
+![a Venn diagram of a company as seen as the intersection of interests of its owners and shareholders, its employees, and its clients](./archive/stakeholders.jpg)
 
 The presented groups of stakeholders are only exemplificatory. One could partition stakeholders differently.
 
