@@ -16,15 +16,10 @@ https://en.m.wikipedia.org/wiki/Surrogate_key
 https://cs.stackexchange.com/questions/99350/did-date-and-darwens-third-manifesto-have-a-lasting-impact
 https://xkcd.com/327/
 https://dl.acm.org/doi/abs/10.1145/202660.202667
-https://www.researchgate.net/publication/297675657_Accounting_Database_Design_and_SQL_Implementation
 https://deavid.wordpress.com/2018/08/31/things-i-miss-from-postgresql/
-https://www.codeproject.com/Articles/5161230/Database-for-Financial-Accounting-Application-I-Ba
 https://stackoverflow.com/questions/7078837/why-doesnt-sql-support-null-instead-of-is-null
-https://stackoverflow.com/questions/596706/best-practices-for-storing-bank-information-in-a-database
 https://www.reddit.com/r/learnprogramming/comments/mh8p19/which_database_should_i_use_to_store_about_200gb/
-https://stackoverflow.com/questions/3957491/whats-the-best-db-to-store-banking-transactions
 https://stackoverflow.com/questions/1018822/inner-join-on-vs-where-clause
-https://dba.stackexchange.com/questions/294456/should-stored-financial-transactions-include-some-data-redundancy
 https://stackoverflow.com/questions/15726535/which-datatype-should-be-used-for-currency
 https://dba.stackexchange.com/questions/161119/first-normal-form-definitive-definition
 https://vertabelo.com/blog/the-9-most-common-database-design-errors/

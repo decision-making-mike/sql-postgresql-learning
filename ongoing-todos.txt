@@ -1,2 +1,1 @@
 Finding the answer for the problem described at https://dba.stackexchange.com/questions/343718/why-does-old-postgresql-conf-affect-new-postgresql-version
-Creating first queries to the database

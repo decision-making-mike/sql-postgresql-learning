@@ -1,6 +1,6 @@
 # SQL and PostgreSQL learning
 
-A blog and a repository documenting my learning of SQL, PostgreSQL, and databases in general.
+A blog and a repository documenting my learning of SQL, PostgreSQL, databases, and data modeling.
 
 [ongoing-todos.txt](ongoing-todos.txt)
 
@@ -9,6 +9,26 @@ A blog and a repository documenting my learning of SQL, PostgreSQL, and database
 [completed-todos.txt](completed-todos.txt)
 
 [completed-reads.txt](completed-reads.txt)
+
+## Update 50. Spinning off the "transport company database" subproject. Data modeling topic addition
+
+I have decided to spin off the "transport company database" subproject into a separate project, "transport company". I hope that developing this new project on its own will let me present my skills more clearly.
+
+I have created a new repository and copied all the relevant files there. Its URL is https://github.com/decision-making-mike/transport-company. All future development of the new "transport company" project shall be done in that new repository. Similarly all new GitHub issues for it shall be created there.
+
+I am archiving the "transport company database" subproject. There shall be no new development of it, by which I mean also no bug fixes. I have moved the files of the subproject to the `archive` directory.
+
+As for relevant ongoing reads, there are none.
+
+As for the relevant completed reads, I could copy or move them to the `completed-reads.txt` file in the new repository. I decided to move them. This way it won't look as if I've read more than I have.
+
+As for the relevant ongoing TODOs, I've deleted the one that was there. It was not relevant to the current state of the new project.
+
+As for completed TODOs, naturally there are none relevant to the new project. All of them were only relevant to the subproject in the time they became completed.
+
+I plan to continue writing about my reading of the PostgreSQL's documentation in this repository. As to any other things related to my learning of PostgreSQL, SQL, databases, if they will be more related to these topics, I'll write about them here. Otherwise I'll write about them in the new project. But probably most of them will still be fitting here.
+
+Lastly, beside making the spin-off, I'm updating the topics of this repository. Now they shall include also data modeling. This topic came up during the development of the subproject.
 
 ## Update 49. Documentation reading. Reading about business process modelling
 
