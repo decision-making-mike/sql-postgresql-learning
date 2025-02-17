@@ -39,3 +39,8 @@ https://l_avrot.gitlab.io/slides/null_20220525.html#/
 Hugh Darwen, "How To Handle Missing Information Without Using NULL", 2003, https://www.dcs.warwick.ac.uk/%7Ehugh/TTM/Missing-info-without-nulls.pdf
 https://www.red-gate.com/simple-talk/databases/sql-server/learn/sql-and-the-snare-of-three-valued-logic/
 https://en.m.wikipedia.org/wiki/Object%E2%80%93relational_impedance_mismatch
+https://www.researchgate.net/publication/297675657_Accounting_Database_Design_and_SQL_Implementation
+https://www.codeproject.com/Articles/5161230/Database-for-Financial-Accounting-Application-I-Ba
+https://stackoverflow.com/questions/596706/best-practices-for-storing-bank-information-in-a-database
+https://stackoverflow.com/questions/3957491/whats-the-best-db-to-store-banking-transactions
+https://dba.stackexchange.com/questions/294456/should-stored-financial-transactions-include-some-data-redundancy
