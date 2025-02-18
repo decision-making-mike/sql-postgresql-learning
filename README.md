@@ -10,6 +10,10 @@ A blog and a repository documenting my learning of SQL, PostgreSQL, databases, a
 
 [completed-reads.txt](completed-reads.txt)
 
+## Update 51. PostgreSQL's documentation reading
+
+I have read up to point "9.9.4. `AT TIME ZONE` and `AT LOCAL`" in the PostgreSQL's documentation.
+
 ## Update 50. Spinning off the "transport company database" subproject. Data modeling topic addition
 
 I have decided to spin off the "transport company database" subproject into a separate project, "transport company". I hope that developing this new project on its own will let me present my skills more clearly.
