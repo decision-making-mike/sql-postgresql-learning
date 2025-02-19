@@ -10,6 +10,10 @@ A blog and a repository documenting my learning of SQL, PostgreSQL, databases, a
 
 [completed-reads.txt](completed-reads.txt)
 
+## Update 52. PostgreSQL's documentation reading
+
+I have read up to point "9.12. Network Address Functions and Operators" in the PostgreSQL's documentation.
+
 ## Update 51. PostgreSQL's documentation reading
 
 I have read up to point "9.9.4. `AT TIME ZONE` and `AT LOCAL`" in the PostgreSQL's documentation.
