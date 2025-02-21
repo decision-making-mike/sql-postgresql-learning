@@ -10,6 +10,10 @@ A blog and a repository documenting my learning of SQL, PostgreSQL, databases, a
 
 [completed-reads.txt](completed-reads.txt)
 
+## Update 53. PostgreSQL's documentation reading.
+
+I have read up to point "9.15.1.4. `Xmlelement`" in the PostgreSQL's documentation.
+
 ## Update 52. PostgreSQL's documentation reading
 
 I have read up to point "9.12. Network Address Functions and Operators" in the PostgreSQL's documentation.
