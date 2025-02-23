@@ -44,3 +44,11 @@ https://www.codeproject.com/Articles/5161230/Database-for-Financial-Accounting-A
 https://stackoverflow.com/questions/596706/best-practices-for-storing-bank-information-in-a-database
 https://stackoverflow.com/questions/3957491/whats-the-best-db-to-store-banking-transactions
 https://dba.stackexchange.com/questions/294456/should-stored-financial-transactions-include-some-data-redundancy
+https://en.m.wikipedia.org/wiki/Integrated_Data_Store
+https://en.m.wikipedia.org/wiki/Data_model
+https://www.bkent.net/Doc/darxrp.htm
+https://stackoverflow.com/questions/40623169/normalization-in-database-management-system/40640962#40640962
+https://wiki.c2.com/?BusinessSystemTwelve
+https://wiki.c2.com/?TutorialDee
+https://wiki.c2.com/?TheThirdManifesto
+https://datatechnologytoday.wordpress.com/2017/07/18/what-the-null-handling-missing-information-in-database-systems/
