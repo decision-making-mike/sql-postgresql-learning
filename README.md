@@ -10,6 +10,12 @@ A blog and a repository documenting my learning of SQL, PostgreSQL, databases, a
 
 [completed-reads.txt](completed-reads.txt)
 
+## Repository archiving update.
+
+On March 21, 2025 the content of this repository has been copied, with more or less changes, to the repository [`learning`](https://github.com/decision-making-mike/learning), to the directory [`sql-data-modeling`](https://github.com/decision-making-mike/learning/tree/main/sql-data-modeling). From this day on, this repository will be neither added, changed nor removed any content.
+
+This repository will be archived either on, or somewhen after March 29, 2025.
+
 ## Update 53. PostgreSQL's documentation reading.
 
 I have read up to point "9.15.1.4. `Xmlelement`" in the PostgreSQL's documentation.
